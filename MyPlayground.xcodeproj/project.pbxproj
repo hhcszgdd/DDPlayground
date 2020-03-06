@@ -7,6 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B3437DB72410B5A2004971E1 /* SortFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3437DB62410B5A2004971E1 /* SortFunction.swift */; };
+		B3437DC12410B651004971E1 /* DDUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = B3437DBF2410B651004971E1 /* DDUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B3437DC42410B651004971E1 /* DDUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3437DBD2410B651004971E1 /* DDUIKit.framework */; };
+		B3437DC52410B651004971E1 /* DDUIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B3437DBD2410B651004971E1 /* DDUIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B3437DD12410B68C004971E1 /* DDRow3.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3437DC92410B68C004971E1 /* DDRow3.swift */; };
+		B3437DD22410B68C004971E1 /* DDCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3437DCA2410B68C004971E1 /* DDCollectionView.swift */; };
+		B3437DD32410B68C004971E1 /* DDRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3437DCB2410B68C004971E1 /* DDRow.swift */; };
+		B3437DD42410B68C004971E1 /* DDCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3437DCC2410B68C004971E1 /* DDCollectionViewCell.swift */; };
+		B3437DD52410B68C004971E1 /* DDRow1.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3437DCD2410B68C004971E1 /* DDRow1.swift */; };
+		B3437DD62410B68C004971E1 /* DDRow2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3437DCE2410B68C004971E1 /* DDRow2.swift */; };
+		B3437DD72410B68C004971E1 /* DDSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3437DCF2410B68C004971E1 /* DDSection.swift */; };
+		B3437DD82410B68C004971E1 /* DDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3437DD02410B68C004971E1 /* DDViewController.swift */; };
+		B36C2932240A5A38003B57E1 /* GradientManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36C2931240A5A38003B57E1 /* GradientManager.swift */; };
+		B36C293C240A5C96003B57E1 /* DDFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = B36C293A240A5C96003B57E1 /* DDFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B36C293F240A5C96003B57E1 /* DDFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B36C2938240A5C96003B57E1 /* DDFramework.framework */; };
+		B36C2940240A5C96003B57E1 /* DDFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B36C2938240A5C96003B57E1 /* DDFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B36C2946240A5D2B003B57E1 /* DDFunctionClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36C2945240A5D2B003B57E1 /* DDFunctionClass.swift */; };
 		B3B539A6240A56E9005163CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B539A5240A56E9005163CE /* AppDelegate.swift */; };
 		B3B539A8240A56E9005163CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B539A7240A56E9005163CE /* SceneDelegate.swift */; };
 		B3B539AA240A56E9005163CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B539A9240A56E9005163CE /* ViewController.swift */; };
@@ -14,9 +31,61 @@
 		B3B539B0240A56E9005163CE /* MyPlayground.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B3B539AE240A56E9005163CE /* MyPlayground.xcdatamodeld */; };
 		B3B539B2240A56EB005163CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3B539B1240A56EB005163CE /* Assets.xcassets */; };
 		B3B539B5240A56EB005163CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3B539B3240A56EB005163CE /* LaunchScreen.storyboard */; };
+		B3B539BE240A575A005163CE /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B539BD240A575A005163CE /* CoreDataManager.swift */; };
+		B3B539C2240A5811005163CE /* Model1+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B539C0240A5810005163CE /* Model1+CoreDataClass.swift */; };
+		B3B539C3240A5811005163CE /* Model1+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B539C1240A5810005163CE /* Model1+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		B3437DC22410B651004971E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B3B5399A240A56E9005163CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B3437DBC2410B651004971E1;
+			remoteInfo = DDUIKit;
+		};
+		B36C293D240A5C96003B57E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B3B5399A240A56E9005163CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B36C2937240A5C96003B57E1;
+			remoteInfo = DDFramework;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B36C2944240A5C96003B57E1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B36C2940240A5C96003B57E1 /* DDFramework.framework in Embed Frameworks */,
+				B3437DC52410B651004971E1 /* DDUIKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		B3437DB62410B5A2004971E1 /* SortFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortFunction.swift; sourceTree = "<group>"; };
+		B3437DBD2410B651004971E1 /* DDUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DDUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3437DBF2410B651004971E1 /* DDUIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDUIKit.h; sourceTree = "<group>"; };
+		B3437DC02410B651004971E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3437DC92410B68C004971E1 /* DDRow3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDRow3.swift; sourceTree = "<group>"; };
+		B3437DCA2410B68C004971E1 /* DDCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDCollectionView.swift; sourceTree = "<group>"; };
+		B3437DCB2410B68C004971E1 /* DDRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDRow.swift; sourceTree = "<group>"; };
+		B3437DCC2410B68C004971E1 /* DDCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDCollectionViewCell.swift; sourceTree = "<group>"; };
+		B3437DCD2410B68C004971E1 /* DDRow1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDRow1.swift; sourceTree = "<group>"; };
+		B3437DCE2410B68C004971E1 /* DDRow2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDRow2.swift; sourceTree = "<group>"; };
+		B3437DCF2410B68C004971E1 /* DDSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDSection.swift; sourceTree = "<group>"; };
+		B3437DD02410B68C004971E1 /* DDViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDViewController.swift; sourceTree = "<group>"; };
+		B36C2931240A5A38003B57E1 /* GradientManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientManager.swift; sourceTree = "<group>"; };
+		B36C2938240A5C96003B57E1 /* DDFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DDFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B36C293A240A5C96003B57E1 /* DDFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDFramework.h; sourceTree = "<group>"; };
+		B36C293B240A5C96003B57E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B36C2945240A5D2B003B57E1 /* DDFunctionClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDFunctionClass.swift; sourceTree = "<group>"; };
 		B3B539A2240A56E9005163CE /* MyPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3B539A5240A56E9005163CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3B539A7240A56E9005163CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,23 +95,82 @@
 		B3B539B1240A56EB005163CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B3B539B4240A56EB005163CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B3B539B6240A56EB005163CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3B539BD240A575A005163CE /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		B3B539C0240A5810005163CE /* Model1+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Model1+CoreDataClass.swift"; sourceTree = "<group>"; };
+		B3B539C1240A5810005163CE /* Model1+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Model1+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B3B5399F240A56E9005163CE /* Frameworks */ = {
+		B3437DBA2410B651004971E1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B36C2935240A5C96003B57E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3B5399F240A56E9005163CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B36C293F240A5C96003B57E1 /* DDFramework.framework in Frameworks */,
+				B3437DC42410B651004971E1 /* DDUIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B3437DB52410B56C004971E1 /* Sort */ = {
+			isa = PBXGroup;
+			children = (
+				B3437DB62410B5A2004971E1 /* SortFunction.swift */,
+			);
+			path = Sort;
+			sourceTree = "<group>";
+		};
+		B3437DBE2410B651004971E1 /* DDUIKit */ = {
+			isa = PBXGroup;
+			children = (
+				B3437DCA2410B68C004971E1 /* DDCollectionView.swift */,
+				B3437DCC2410B68C004971E1 /* DDCollectionViewCell.swift */,
+				B3437DCB2410B68C004971E1 /* DDRow.swift */,
+				B3437DCD2410B68C004971E1 /* DDRow1.swift */,
+				B3437DCE2410B68C004971E1 /* DDRow2.swift */,
+				B3437DC92410B68C004971E1 /* DDRow3.swift */,
+				B3437DCF2410B68C004971E1 /* DDSection.swift */,
+				B3437DD02410B68C004971E1 /* DDViewController.swift */,
+				B3437DBF2410B651004971E1 /* DDUIKit.h */,
+				B3437DC02410B651004971E1 /* Info.plist */,
+			);
+			path = DDUIKit;
+			sourceTree = "<group>";
+		};
+		B36C2939240A5C96003B57E1 /* DDFramework */ = {
+			isa = PBXGroup;
+			children = (
+				B36C293A240A5C96003B57E1 /* DDFramework.h */,
+				B36C2945240A5D2B003B57E1 /* DDFunctionClass.swift */,
+				B36C293B240A5C96003B57E1 /* Info.plist */,
+			);
+			path = DDFramework;
+			sourceTree = "<group>";
+		};
 		B3B53999240A56E9005163CE = {
 			isa = PBXGroup;
 			children = (
+				B3437DB52410B56C004971E1 /* Sort */,
+				B3B539C4240A594F005163CE /* GridentLayer */,
+				B3B539BC240A5726005163CE /* CoreData */,
 				B3B539A4240A56E9005163CE /* MyPlayground */,
+				B36C2939240A5C96003B57E1 /* DDFramework */,
+				B3437DBE2410B651004971E1 /* DDUIKit */,
 				B3B539A3240A56E9005163CE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +179,8 @@
 			isa = PBXGroup;
 			children = (
 				B3B539A2240A56E9005163CE /* MyPlayground.app */,
+				B36C2938240A5C96003B57E1 /* DDFramework.framework */,
+				B3437DBD2410B651004971E1 /* DDUIKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,9 +200,90 @@
 			path = MyPlayground;
 			sourceTree = "<group>";
 		};
+		B3B539BC240A5726005163CE /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				B3B539BF240A57F9005163CE /* Models */,
+				B3B539BD240A575A005163CE /* CoreDataManager.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		B3B539BF240A57F9005163CE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B3B539C0240A5810005163CE /* Model1+CoreDataClass.swift */,
+				B3B539C1240A5810005163CE /* Model1+CoreDataProperties.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B3B539C4240A594F005163CE /* GridentLayer */ = {
+			isa = PBXGroup;
+			children = (
+				B36C2931240A5A38003B57E1 /* GradientManager.swift */,
+			);
+			path = GridentLayer;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		B3437DB82410B651004971E1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3437DC12410B651004971E1 /* DDUIKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B36C2933240A5C96003B57E1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B36C293C240A5C96003B57E1 /* DDFramework.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		B3437DBC2410B651004971E1 /* DDUIKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3437DC62410B651004971E1 /* Build configuration list for PBXNativeTarget "DDUIKit" */;
+			buildPhases = (
+				B3437DB82410B651004971E1 /* Headers */,
+				B3437DB92410B651004971E1 /* Sources */,
+				B3437DBA2410B651004971E1 /* Frameworks */,
+				B3437DBB2410B651004971E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DDUIKit;
+			productName = DDUIKit;
+			productReference = B3437DBD2410B651004971E1 /* DDUIKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B36C2937240A5C96003B57E1 /* DDFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B36C2941240A5C96003B57E1 /* Build configuration list for PBXNativeTarget "DDFramework" */;
+			buildPhases = (
+				B36C2933240A5C96003B57E1 /* Headers */,
+				B36C2934240A5C96003B57E1 /* Sources */,
+				B36C2935240A5C96003B57E1 /* Frameworks */,
+				B36C2936240A5C96003B57E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DDFramework;
+			productName = DDFramework;
+			productReference = B36C2938240A5C96003B57E1 /* DDFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		B3B539A1240A56E9005163CE /* MyPlayground */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B3B539B9240A56EB005163CE /* Build configuration list for PBXNativeTarget "MyPlayground" */;
@@ -80,10 +291,13 @@
 				B3B5399E240A56E9005163CE /* Sources */,
 				B3B5399F240A56E9005163CE /* Frameworks */,
 				B3B539A0240A56E9005163CE /* Resources */,
+				B36C2944240A5C96003B57E1 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B36C293E240A5C96003B57E1 /* PBXTargetDependency */,
+				B3437DC32410B651004971E1 /* PBXTargetDependency */,
 			);
 			name = MyPlayground;
 			productName = MyPlayground;
@@ -100,6 +314,14 @@
 				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = JohnConnor;
 				TargetAttributes = {
+					B3437DBC2410B651004971E1 = {
+						CreatedOnToolsVersion = 11.2.1;
+						LastSwiftMigration = 1120;
+					};
+					B36C2937240A5C96003B57E1 = {
+						CreatedOnToolsVersion = 11.2.1;
+						LastSwiftMigration = 1120;
+					};
 					B3B539A1240A56E9005163CE = {
 						CreatedOnToolsVersion = 11.2.1;
 					};
@@ -119,11 +341,27 @@
 			projectRoot = "";
 			targets = (
 				B3B539A1240A56E9005163CE /* MyPlayground */,
+				B36C2937240A5C96003B57E1 /* DDFramework */,
+				B3437DBC2410B651004971E1 /* DDUIKit */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		B3437DBB2410B651004971E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B36C2936240A5C96003B57E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B3B539A0240A56E9005163CE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -137,18 +375,59 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B3437DB92410B651004971E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3437DD82410B68C004971E1 /* DDViewController.swift in Sources */,
+				B3437DD72410B68C004971E1 /* DDSection.swift in Sources */,
+				B3437DD42410B68C004971E1 /* DDCollectionViewCell.swift in Sources */,
+				B3437DD62410B68C004971E1 /* DDRow2.swift in Sources */,
+				B3437DD52410B68C004971E1 /* DDRow1.swift in Sources */,
+				B3437DD22410B68C004971E1 /* DDCollectionView.swift in Sources */,
+				B3437DD12410B68C004971E1 /* DDRow3.swift in Sources */,
+				B3437DD32410B68C004971E1 /* DDRow.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B36C2934240A5C96003B57E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B36C2946240A5D2B003B57E1 /* DDFunctionClass.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B3B5399E240A56E9005163CE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B3B539B0240A56E9005163CE /* MyPlayground.xcdatamodeld in Sources */,
+				B36C2932240A5A38003B57E1 /* GradientManager.swift in Sources */,
 				B3B539AA240A56E9005163CE /* ViewController.swift in Sources */,
 				B3B539A6240A56E9005163CE /* AppDelegate.swift in Sources */,
+				B3437DB72410B5A2004971E1 /* SortFunction.swift in Sources */,
+				B3B539BE240A575A005163CE /* CoreDataManager.swift in Sources */,
 				B3B539A8240A56E9005163CE /* SceneDelegate.swift in Sources */,
+				B3B539C3240A5811005163CE /* Model1+CoreDataProperties.swift in Sources */,
+				B3B539C2240A5811005163CE /* Model1+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B3437DC32410B651004971E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B3437DBC2410B651004971E1 /* DDUIKit */;
+			targetProxy = B3437DC22410B651004971E1 /* PBXContainerItemProxy */;
+		};
+		B36C293E240A5C96003B57E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B36C2937240A5C96003B57E1 /* DDFramework */;
+			targetProxy = B36C293D240A5C96003B57E1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B3B539AB240A56E9005163CE /* Main.storyboard */ = {
@@ -170,6 +449,120 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		B3437DC72410B651004971E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 3G3KPW6FQ7;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DDUIKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hhcszgd.DDUIKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B3437DC82410B651004971E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 3G3KPW6FQ7;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DDUIKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hhcszgd.DDUIKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B36C2942240A5C96003B57E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 3G3KPW6FQ7;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DDFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hhcszgd.DDFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B36C2943240A5C96003B57E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 3G3KPW6FQ7;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DDFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hhcszgd.DDFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		B3B539B7240A56EB005163CE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -287,6 +680,7 @@
 		B3B539BA240A56EB005163CE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3G3KPW6FQ7;
@@ -305,6 +699,7 @@
 		B3B539BB240A56EB005163CE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3G3KPW6FQ7;
@@ -323,6 +718,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B3437DC62410B651004971E1 /* Build configuration list for PBXNativeTarget "DDUIKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3437DC72410B651004971E1 /* Debug */,
+				B3437DC82410B651004971E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B36C2941240A5C96003B57E1 /* Build configuration list for PBXNativeTarget "DDFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B36C2942240A5C96003B57E1 /* Debug */,
+				B36C2943240A5C96003B57E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B3B5399D240A56E9005163CE /* Build configuration list for PBXProject "MyPlayground" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
