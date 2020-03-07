@@ -12,6 +12,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .white
         CoreDataManager.share.testSaveData()
         CoreDataManager.share.testReadData()
 //        GradientManager.share.testWithView(parentView: view)

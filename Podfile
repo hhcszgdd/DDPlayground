@@ -19,8 +19,9 @@ end
 target 'MyPlaygroundUITests' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-  pod 'EarlGreyTest'
-  pod 'eDistantObject', '0.9.1'
+#  project 'MyPlayground'
+#pod 'EarlGreyTest' , '2.0.0-rc'
+#pod 'eDistantObject', '0.9.0'
 
   # Pods for DDUIKit
 
@@ -28,9 +29,9 @@ end
 target 'MyPlayground' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
+  # Pods for MyPlayground
     pod 'RxSwift', '~> 5'
     pod 'RxCocoa', '~> 5'
-    pod 'EarlGreyApp'
-  # Pods for MyPlayground
+#    pod 'EarlGreyApp', '2.0.0-rc'
 
 end
