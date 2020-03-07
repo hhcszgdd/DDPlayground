@@ -8,6 +8,11 @@
 
 import UIKit
 open class DDRow : UIView {
+    var rowHeight: DDRowHeight {
+        return DDRowHeight.auto
+    }
+    
+    
     var collectionView: DDCollectionView!
 //    var height: CGFloat {
 //        return 44
@@ -34,4 +39,8 @@ open class DDRow : UIView {
     //    init(t: T) {
     //        a = t as? AnyClass
     //    }
+}
+public enum DDRowHeight {
+    case auto
+    case caculattion(CGFloat)
 }

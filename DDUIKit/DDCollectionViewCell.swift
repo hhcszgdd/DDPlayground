@@ -35,12 +35,17 @@ public class DDCollectionViewCell: UICollectionViewCell {
 //        row.frame = bounds
     }
     
-//    override public func preferredLayoutAttributesFitting(_ layoutAttributes: UICollectionViewLayoutAttributes) -> UICollectionViewLayoutAttributes {
-//        let attribures = super.preferredLayoutAttributesFitting(layoutAttributes)
-//        print("xxxx: \(attribures.bounds)")
-//        attribures.size.width = UIScreen.main.bounds.width// CGSize(width: UIScreen.main.bounds.width, height: row.height) // row.bounds.size
-//        return attribures
-//    }
+override public func preferredLayoutAttributesFitting(_ layoutAttributes: UICollectionViewLayoutAttributes) -> UICollectionViewLayoutAttributes {
+    let attribures = super.preferredLayoutAttributesFitting(layoutAttributes)
+    attribures.size.width = UIScreen.main.bounds.width
+    switch row.rowHeight {
+    case .auto:
+        break
+    case .caculattion(let h):
+        attribures.bounds.size.height = h
+    }
+    return attribures
+}
     
     override public func prepareForReuse() {
         super.prepareForReuse()

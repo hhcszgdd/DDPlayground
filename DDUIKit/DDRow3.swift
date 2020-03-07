@@ -38,9 +38,10 @@ open class DDRow3: DDRow {
 
 
 open class DDRow4: DDRow {
-//    override var height: CGFloat {
-//        return 111
-//    }
+    override var rowHeight: DDRowHeight {
+//        return .caculattion(88)
+        return .auto
+    }
     let label = UILabel()
     var myHeightAnchor :NSLayoutConstraint = NSLayoutConstraint()
     let button = UIButton(type: UIButton.ButtonType.infoLight)
