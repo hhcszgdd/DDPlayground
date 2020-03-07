@@ -12,28 +12,17 @@ public class DDCollectionViewCell: UICollectionViewCell {
     var row = DDRow() {
         didSet{
             row.translatesAutoresizingMaskIntoConstraints = false
-            self.contentView.addSubview(row)
+            contentView.addSubview(row)
             NSLayoutConstraint.activate([
-//                row.heightAnchor.constraint(equalToConstant: row.height),
                 row.topAnchor.constraint(equalTo: contentView.topAnchor),
                 row.leftAnchor.constraint(equalTo: contentView.leftAnchor),
-//                row.rightAnchor.constraint(equalTo: contentView.rightAnchor),
                 row.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width),
                 row.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
                 contentView.bottomAnchor.constraint(equalTo: row.bottomAnchor),
-//                contentView.topAnchor.constraint(equalTo: row.topAnchor),
-//                contentView.leftAnchor.constraint(equalTo: row.leftAnchor),
-//                contentView.rightAnchor.constraint(equalTo: row.rightAnchor)
             ])
-//            setNeedsLayout()
-//            setNeedsDisplay()
         }
     }
     
-    override public func layoutSubviews() {
-        super.layoutSubviews()
-//        row.frame = bounds
-    }
     
 override public func preferredLayoutAttributesFitting(_ layoutAttributes: UICollectionViewLayoutAttributes) -> UICollectionViewLayoutAttributes {
     let attribures = super.preferredLayoutAttributesFitting(layoutAttributes)
@@ -56,6 +45,7 @@ override public func preferredLayoutAttributesFitting(_ layoutAttributes: UIColl
     
     func setRow(row: DDRow, in collectionView: DDCollectionView) {
         row.collectionView = collectionView
+        // TODO: to be set model to row
         guard row != self.row else { return }
         self.row = row
     }

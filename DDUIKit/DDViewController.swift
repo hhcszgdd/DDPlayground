@@ -15,6 +15,7 @@ open class DDViewController: UIViewController {
 //
 //        layout.minimumInteritemSpacing = 10
 //        layout.itemSize = CGSize(width: UIScreen.main.bounds.width, height: 100)
+        layout.sectionInset = UIEdgeInsets(top: 10, left: 0, bottom: 0, right: 0)
         layout.estimatedItemSize = CGSize(width: UIScreen.main.bounds.width, height: 0)
         return layout
     }()
