@@ -15,7 +15,7 @@ open class DDViewController: UIViewController {
 //
 //        layout.minimumInteritemSpacing = 10
 //        layout.itemSize = CGSize(width: UIScreen.main.bounds.width, height: 100)
-        layout.estimatedItemSize = CGSize(width: UIScreen.main.bounds.width, height: 56)
+        layout.estimatedItemSize = CGSize(width: UIScreen.main.bounds.width, height: 0)
         return layout
     }()
     open lazy var collectionView: DDCollectionView = {

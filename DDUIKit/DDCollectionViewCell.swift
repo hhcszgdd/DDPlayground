@@ -11,8 +11,8 @@ import UIKit
 public class DDCollectionViewCell: UICollectionViewCell {
     var row = DDRow() {
         didSet{
-            self.contentView.addSubview(row)
             row.translatesAutoresizingMaskIntoConstraints = false
+            self.contentView.addSubview(row)
             NSLayoutConstraint.activate([
 //                row.heightAnchor.constraint(equalToConstant: row.height),
                 row.topAnchor.constraint(equalTo: contentView.topAnchor),

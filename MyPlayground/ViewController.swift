@@ -8,10 +8,15 @@
 
 import UIKit
 import DDUIKit
+import DDFramework
 class ViewController: UIViewController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
+        let ss = UIView()
+        ss.setWidth(200)
+        ss.setHeight(200)
+        ss.backgroundColor = .blue
+        view.add(subview: ss, pin: [.top, .left], margin: DDMargins(top: 200, left: 100))
         view.backgroundColor = .white
         CoreDataManager.share.testSaveData()
         CoreDataManager.share.testReadData()
