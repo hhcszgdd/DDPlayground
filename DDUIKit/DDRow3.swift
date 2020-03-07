@@ -43,7 +43,7 @@ open class DDRow4: DDRow {
 //    }
     let label = UILabel()
     var myHeightAnchor :NSLayoutConstraint = NSLayoutConstraint()
-    let button = UIButton(type: UIButton.ButtonType.close)
+    let button = UIButton(type: UIButton.ButtonType.infoLight)
     override init(frame: CGRect) {
         super.init(frame: frame)
         addSubview(label)
