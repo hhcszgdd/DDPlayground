@@ -51,7 +51,9 @@ extension UIView {
     }
     /// Note: Just can be set once
     public func setHeight(_ height: CGFloat ) {
-        translatesAutoresizingMaskIntoConstraints = false
+        if !translatesAutoresizingMaskIntoConstraints {
+            translatesAutoresizingMaskIntoConstraints = false
+        }
         heightAnchor.constraint(equalToConstant: height).isActive = true
     }
     /// Note: Just can be set once

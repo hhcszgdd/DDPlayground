@@ -26,37 +26,13 @@ class ViewController: UIViewController {
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
-        let vc = DDViewController()
+//        let vc = DDRxViewController()
+        
+        let vc = DDCollectionViewController()
         vc.collectionView.sections = [
-            DDSection(rows: [ DDRow4(), DDRow(), DDRow1(), DDRow2(), DDRow3() ]),
-            DDSection(rows: [ DDRow(), DDRow1(), DDRow2(), DDRow3() ]),
-            DDSection(rows: [ DDRow(), DDRow1(), DDRow2(), DDRow3() ]),
-            DDSection(rows: [ DDRow(), DDRow1(), DDRow2(), DDRow3() ]),
-            DDSection(rows: [ DDRow(), DDRow1(), DDRow2(), DDRow3() ]),
-            DDSection(rows: [ DDRow(), DDRow1(), DDRow2(), DDRow3() ]),
-            DDSection(rows: [ DDRow(), DDRow1(), DDRow2(), DDRow3() ]),
-            DDSection(rows: [ DDRow(), DDRow1(), DDRow2(), DDRow3() ]),
-            DDSection(rows: [ DDRow(), DDRow1(), DDRow2(), DDRow3() ]),
-            DDSection(rows: [ DDRow(), DDRow1(), DDRow2(), DDRow3() ]),
-            DDSection(rows: [ DDRow(), DDRow1(), DDRow2(), DDRow3() ]),
-            DDSection(rows: [ DDRow(), DDRow1(), DDRow2(), DDRow3() ]),
-            DDSection(rows: [ DDRow(), DDRow1(), DDRow2(), DDRow3() ]),
-            DDSection(rows: [ DDRow(), DDRow1(), DDRow2(), DDRow3() ]),
-            DDSection(rows: [ DDRow(), DDRow1(), DDRow2(), DDRow3() ]),
-            DDSection(rows: [ DDRow(), DDRow1(), DDRow2(), DDRow3() ]),
-            DDSection(rows: [ DDRow(), DDRow1(), DDRow2(), DDRow3() ]),
-            DDSection(rows: [ DDRow(), DDRow1(), DDRow2(), DDRow3() ]),
-            DDSection(rows: [ DDRow(), DDRow1(), DDRow2(), DDRow3() ]),
-            DDSection(rows: [ DDRow(), DDRow1(), DDRow2(), DDRow3() ]),
-            DDSection(rows: [ DDRow(), DDRow1(), DDRow2(), DDRow3() ]),
-            DDSection(rows: [ DDRow(), DDRow1(), DDRow2(), DDRow3() ]),
-            DDSection(rows: [ DDRow(), DDRow1(), DDRow2(), DDRow3() ]),
-            DDSection(rows: [ DDRow(), DDRow1(), DDRow2(), DDRow3() ]),
-            DDSection(rows: [ DDRow(), DDRow1(), DDRow2(), DDRow3() ]),
-            DDSection(rows: [ DDRow(), DDRow1(), DDRow2(), DDRow3() ]),
-            DDSection(rows: [ DDRow(), DDRow1(), DDRow2(), DDRow3() ]),
-            DDSection(rows: [ DDRow(), DDRow1(), DDRow2(), DDRow3() ]),
+            DDSection(rows: [  DDRow5(), DDRow(), DDRow1(), DDRow2(), DDRow3() , DDRow4()  ])
         ]
+        
         navigationController?.pushViewController(vc, animated: true)
     }
     

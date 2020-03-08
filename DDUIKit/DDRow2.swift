@@ -9,26 +9,25 @@
 import UIKit
 
 open class DDRow2: DDRow {
-//    override var height: CGFloat {
-//        return 88
-//    }
-    let label = UILabel()
+    override var rowHeight: DDRowHeight {
+        return .caculattion(100)
+    }
+    let label: UILabel = {
+        let result = UILabel()
+        result.numberOfLines = 0
+        result.translatesAutoresizingMaskIntoConstraints = false
+        result.text = "row2222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222"
+        return result
+    }()
     override init(frame: CGRect) {
         super.init(frame: frame)
         addSubview(label)
-        label.numberOfLines = 0
-        label.text = "label22222"
-        label.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             label.topAnchor.constraint(equalTo: topAnchor),
             label.leftAnchor.constraint(equalTo: leftAnchor),
             label.rightAnchor.constraint(equalTo: rightAnchor),
             label.bottomAnchor.constraint(equalTo: bottomAnchor)
         ])
-    }
-    override open func layoutSubviews() {
-        super.layoutSubviews()
-//        label.frame = bounds
     }
     
     required public init?(coder: NSCoder) {

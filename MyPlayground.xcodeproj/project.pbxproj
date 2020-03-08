@@ -23,6 +23,8 @@
 		B3437DD72410B68C004971E1 /* DDSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3437DCF2410B68C004971E1 /* DDSection.swift */; };
 		B3437DD82410B68C004971E1 /* DDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3437DD02410B68C004971E1 /* DDViewController.swift */; };
 		B3437DE024127E40004971E1 /* MyPlaygroundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3437DDF24127E40004971E1 /* MyPlaygroundUITests.swift */; };
+		B34810802414911D00C041FB /* DDCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B348107F2414911D00C041FB /* DDCollectionViewController.swift */; };
+		B3498DCE2413EC7C00867D6D /* DDRxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3498DCD2413EC7C00867D6D /* DDRxViewController.swift */; };
 		B36C2932240A5A38003B57E1 /* GradientManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36C2931240A5A38003B57E1 /* GradientManager.swift */; };
 		B36C293C240A5C96003B57E1 /* DDFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = B36C293A240A5C96003B57E1 /* DDFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B36C293F240A5C96003B57E1 /* DDFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B36C2938240A5C96003B57E1 /* DDFramework.framework */; };
@@ -101,6 +103,8 @@
 		B3437DDD24127E40004971E1 /* MyPlaygroundUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyPlaygroundUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3437DDF24127E40004971E1 /* MyPlaygroundUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlaygroundUITests.swift; sourceTree = "<group>"; };
 		B3437DE124127E40004971E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B348107F2414911D00C041FB /* DDCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDCollectionViewController.swift; sourceTree = "<group>"; };
+		B3498DCD2413EC7C00867D6D /* DDRxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDRxViewController.swift; sourceTree = "<group>"; };
 		B36C2931240A5A38003B57E1 /* GradientManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientManager.swift; sourceTree = "<group>"; };
 		B36C2938240A5C96003B57E1 /* DDFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DDFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B36C293A240A5C96003B57E1 /* DDFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDFramework.h; sourceTree = "<group>"; };
@@ -195,6 +199,7 @@
 				B3437DC92410B68C004971E1 /* DDRow3.swift */,
 				B3437DCF2410B68C004971E1 /* DDSection.swift */,
 				B3437DD02410B68C004971E1 /* DDViewController.swift */,
+				B348107F2414911D00C041FB /* DDCollectionViewController.swift */,
 				B3437DBF2410B651004971E1 /* DDUIKit.h */,
 				B3437DC02410B651004971E1 /* Info.plist */,
 			);
@@ -210,6 +215,14 @@
 			path = MyPlaygroundUITests;
 			sourceTree = "<group>";
 		};
+		B3498DCC2413EC4A00867D6D /* RxSwift */ = {
+			isa = PBXGroup;
+			children = (
+				B3498DCD2413EC7C00867D6D /* DDRxViewController.swift */,
+			);
+			path = RxSwift;
+			sourceTree = "<group>";
+		};
 		B36C2939240A5C96003B57E1 /* DDFramework */ = {
 			isa = PBXGroup;
 			children = (
@@ -223,6 +236,7 @@
 		B3B53999240A56E9005163CE = {
 			isa = PBXGroup;
 			children = (
+				B3498DCC2413EC4A00867D6D /* RxSwift */,
 				B3437DB52410B56C004971E1 /* Sort */,
 				B3B539C4240A594F005163CE /* GridentLayer */,
 				B3B539BC240A5726005163CE /* CoreData */,
@@ -603,6 +617,7 @@
 				B3437DD72410B68C004971E1 /* DDSection.swift in Sources */,
 				B3437DD42410B68C004971E1 /* DDCollectionViewCell.swift in Sources */,
 				B3437DD62410B68C004971E1 /* DDRow2.swift in Sources */,
+				B34810802414911D00C041FB /* DDCollectionViewController.swift in Sources */,
 				B3437DD52410B68C004971E1 /* DDRow1.swift in Sources */,
 				B3437DD22410B68C004971E1 /* DDCollectionView.swift in Sources */,
 				B3437DD12410B68C004971E1 /* DDRow3.swift in Sources */,
@@ -632,6 +647,7 @@
 			files = (
 				B3B539B0240A56E9005163CE /* MyPlayground.xcdatamodeld in Sources */,
 				B36C2932240A5A38003B57E1 /* GradientManager.swift in Sources */,
+				B3498DCE2413EC7C00867D6D /* DDRxViewController.swift in Sources */,
 				B3B539AA240A56E9005163CE /* ViewController.swift in Sources */,
 				B3B539A6240A56E9005163CE /* AppDelegate.swift in Sources */,
 				B3437DB72410B5A2004971E1 /* SortFunction.swift in Sources */,
