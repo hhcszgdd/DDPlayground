@@ -24,6 +24,18 @@
 		B3437DD82410B68C004971E1 /* DDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3437DD02410B68C004971E1 /* DDViewController.swift */; };
 		B3437DE024127E40004971E1 /* MyPlaygroundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3437DDF24127E40004971E1 /* MyPlaygroundUITests.swift */; };
 		B34810802414911D00C041FB /* DDCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B348107F2414911D00C041FB /* DDCollectionViewController.swift */; };
+		B34810832414F0E500C041FB /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B34810822414F0E500C041FB /* Colors.xcassets */; };
+		B34810862414F16300C041FB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B34810842414F15F00C041FB /* Images.xcassets */; };
+		B34810872414F16300C041FB /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B34810852414F16300C041FB /* Icons.xcassets */; };
+		B348108A2414F1E000C041FB /* SharedImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B34810882414F1E000C041FB /* SharedImages.xcassets */; };
+		B348108B2414F1E000C041FB /* SharedIcons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B34810892414F1E000C041FB /* SharedIcons.xcassets */; };
+		B34810942414F2E300C041FB /* slide_left.m4a in Resources */ = {isa = PBXBuildFile; fileRef = B348108D2414F2E200C041FB /* slide_left.m4a */; };
+		B34810952414F2E300C041FB /* digi_plink.m4a in Resources */ = {isa = PBXBuildFile; fileRef = B348108E2414F2E200C041FB /* digi_plink.m4a */; };
+		B34810962414F2E300C041FB /* slide_right.m4a in Resources */ = {isa = PBXBuildFile; fileRef = B348108F2414F2E200C041FB /* slide_right.m4a */; };
+		B34810972414F2E300C041FB /* keyboard.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B34810902414F2E200C041FB /* keyboard.mp3 */; };
+		B34810982414F2E300C041FB /* card_drop.m4a in Resources */ = {isa = PBXBuildFile; fileRef = B34810912414F2E300C041FB /* card_drop.m4a */; };
+		B34810992414F2E300C041FB /* card_set.m4a in Resources */ = {isa = PBXBuildFile; fileRef = B34810922414F2E300C041FB /* card_set.m4a */; };
+		B348109A2414F2E300C041FB /* zap_lores.m4a in Resources */ = {isa = PBXBuildFile; fileRef = B34810932414F2E300C041FB /* zap_lores.m4a */; };
 		B3498DCE2413EC7C00867D6D /* DDRxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3498DCD2413EC7C00867D6D /* DDRxViewController.swift */; };
 		B36C2932240A5A38003B57E1 /* GradientManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36C2931240A5A38003B57E1 /* GradientManager.swift */; };
 		B36C293C240A5C96003B57E1 /* DDFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = B36C293A240A5C96003B57E1 /* DDFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -104,6 +116,18 @@
 		B3437DDF24127E40004971E1 /* MyPlaygroundUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlaygroundUITests.swift; sourceTree = "<group>"; };
 		B3437DE124127E40004971E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B348107F2414911D00C041FB /* DDCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDCollectionViewController.swift; sourceTree = "<group>"; };
+		B34810822414F0E500C041FB /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		B34810842414F15F00C041FB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B34810852414F16300C041FB /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
+		B34810882414F1E000C041FB /* SharedImages.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = SharedImages.xcassets; sourceTree = "<group>"; };
+		B34810892414F1E000C041FB /* SharedIcons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = SharedIcons.xcassets; sourceTree = "<group>"; };
+		B348108D2414F2E200C041FB /* slide_left.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = slide_left.m4a; sourceTree = "<group>"; };
+		B348108E2414F2E200C041FB /* digi_plink.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = digi_plink.m4a; sourceTree = "<group>"; };
+		B348108F2414F2E200C041FB /* slide_right.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = slide_right.m4a; sourceTree = "<group>"; };
+		B34810902414F2E200C041FB /* keyboard.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = keyboard.mp3; sourceTree = "<group>"; };
+		B34810912414F2E300C041FB /* card_drop.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = card_drop.m4a; sourceTree = "<group>"; };
+		B34810922414F2E300C041FB /* card_set.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = card_set.m4a; sourceTree = "<group>"; };
+		B34810932414F2E300C041FB /* zap_lores.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = zap_lores.m4a; sourceTree = "<group>"; };
 		B3498DCD2413EC7C00867D6D /* DDRxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDRxViewController.swift; sourceTree = "<group>"; };
 		B36C2931240A5A38003B57E1 /* GradientManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientManager.swift; sourceTree = "<group>"; };
 		B36C2938240A5C96003B57E1 /* DDFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DDFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -215,6 +239,33 @@
 			path = MyPlaygroundUITests;
 			sourceTree = "<group>";
 		};
+		B34810812414F09700C041FB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B348108C2414F28800C041FB /* Sounds */,
+				B34810892414F1E000C041FB /* SharedIcons.xcassets */,
+				B34810882414F1E000C041FB /* SharedImages.xcassets */,
+				B34810852414F16300C041FB /* Icons.xcassets */,
+				B34810842414F15F00C041FB /* Images.xcassets */,
+				B34810822414F0E500C041FB /* Colors.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B348108C2414F28800C041FB /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				B34810912414F2E300C041FB /* card_drop.m4a */,
+				B34810922414F2E300C041FB /* card_set.m4a */,
+				B348108E2414F2E200C041FB /* digi_plink.m4a */,
+				B34810902414F2E200C041FB /* keyboard.mp3 */,
+				B348108D2414F2E200C041FB /* slide_left.m4a */,
+				B348108F2414F2E200C041FB /* slide_right.m4a */,
+				B34810932414F2E300C041FB /* zap_lores.m4a */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
 		B3498DCC2413EC4A00867D6D /* RxSwift */ = {
 			isa = PBXGroup;
 			children = (
@@ -236,6 +287,7 @@
 		B3B53999240A56E9005163CE = {
 			isa = PBXGroup;
 			children = (
+				B34810812414F09700C041FB /* Resources */,
 				B3498DCC2413EC4A00867D6D /* RxSwift */,
 				B3437DB52410B56C004971E1 /* Sort */,
 				B3B539C4240A594F005163CE /* GridentLayer */,
@@ -493,8 +545,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3B539B5240A56EB005163CE /* LaunchScreen.storyboard in Resources */,
+				B34810962414F2E300C041FB /* slide_right.m4a in Resources */,
+				B34810862414F16300C041FB /* Images.xcassets in Resources */,
+				B34810992414F2E300C041FB /* card_set.m4a in Resources */,
+				B34810832414F0E500C041FB /* Colors.xcassets in Resources */,
+				B34810982414F2E300C041FB /* card_drop.m4a in Resources */,
+				B34810942414F2E300C041FB /* slide_left.m4a in Resources */,
+				B348108B2414F1E000C041FB /* SharedIcons.xcassets in Resources */,
 				B3B539B2240A56EB005163CE /* Assets.xcassets in Resources */,
+				B34810952414F2E300C041FB /* digi_plink.m4a in Resources */,
+				B348108A2414F1E000C041FB /* SharedImages.xcassets in Resources */,
+				B34810872414F16300C041FB /* Icons.xcassets in Resources */,
 				B3B539AD240A56E9005163CE /* Main.storyboard in Resources */,
+				B348109A2414F2E300C041FB /* zap_lores.m4a in Resources */,
+				B34810972414F2E300C041FB /* keyboard.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

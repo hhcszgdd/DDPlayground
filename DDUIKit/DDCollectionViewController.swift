@@ -9,7 +9,7 @@
 import UIKit
 
 public class DDCollectionViewController: DDViewController {
-    
+    public override var naviBarStyle: DDNavigationBarStyle { return .green }
     private lazy var flowLayout: UICollectionViewFlowLayout = {
         let layout = UICollectionViewFlowLayout()
         layout.sectionInset = UIEdgeInsets(top: 10, left: 0, bottom: 0, right: 0)

@@ -74,3 +74,28 @@ extension UIView {
         }
     }
 }
+import AudioToolbox
+enum ZLSoundEffect : String {
+    case switchTab = "digi_plink"
+    case plusButtonOpen = "slide_right"
+    case plusButtonClose = "slide_left"
+    case homesDropOpen = "card_drop"
+    case homesDropClose = "card_set"
+    case openWallet = "keyboard"
+
+    private var fileExtension: String {
+        switch self {
+        case .openWallet: return "mp3"
+        default: return "m4a"
+        }
+    }
+
+    func playSound() {
+        guard let soundUrl = Bundle.main.url(forResource: self.rawValue, withExtension: self.fileExtension) else { return }
+
+        var soundId: SystemSoundID = 0
+        AudioServicesCreateSystemSoundID(soundUrl as CFURL, &soundId)
+        AudioServicesAddSystemSoundCompletion(soundId, nil, nil, { soundId, _ -> Void in AudioServicesDisposeSystemSoundID(soundId) }, nil)
+        AudioServicesPlaySystemSound(soundId)
+    }
+}
