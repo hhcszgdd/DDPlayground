@@ -19,6 +19,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = UINavigationController(rootViewController: ViewController())
         window?.makeKeyAndVisible()
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
+            DDWindow.share.show()
+        }
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2) {
+            DDWindow.share.hide()
+        }
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 3) {
+            DDWindow.share.show()
+        }
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 4) {
+            DDWindow.share.hide()
+        }
         return true
     }
 /*
@@ -84,3 +96,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+class DDWindow: UIWindow {
+    static let share: DDWindow = {
+        let result = DDWindow(frame: UIScreen.main.bounds)
+        let vc = UIViewController()
+        vc.view.backgroundColor = .clear// .green
+        vc.view.addSubview(UISwitch(frame: CGRect(x: 100, y: 300, width: 44, height: 44)))
+        vc.view.isUserInteractionEnabled = false
+         result.rootViewController = UINavigationController(rootViewController: vc)
+        return result
+    }()
+    /// 如果app的window是默认storyboard自带的,添加window无效,除非window自己创建
+    func show() {
+        Self.share.isHidden = false
+    }
+    func hide() {
+        Self.share.isHidden = true
+    }
+     
+    
+}

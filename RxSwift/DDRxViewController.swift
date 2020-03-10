@@ -32,6 +32,7 @@ class DDRxViewController: DDViewController {
     }()
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        DDSoundEffect.switchTab.playSound()
         super.touchesBegan(touches, with: event)
         let vc = DDCollectionViewController()
         vc.collectionView.sections = [

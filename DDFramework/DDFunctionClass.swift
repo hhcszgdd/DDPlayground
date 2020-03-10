@@ -75,7 +75,7 @@ extension UIView {
     }
 }
 import AudioToolbox
-enum ZLSoundEffect : String {
+public enum DDSoundEffect : String {
     case switchTab = "digi_plink"
     case plusButtonOpen = "slide_right"
     case plusButtonClose = "slide_left"
@@ -90,12 +90,12 @@ enum ZLSoundEffect : String {
         }
     }
 
-    func playSound() {
+    public func playSound() {
         guard let soundUrl = Bundle.main.url(forResource: self.rawValue, withExtension: self.fileExtension) else { return }
 
         var soundId: SystemSoundID = 0
-        AudioServicesCreateSystemSoundID(soundUrl as CFURL, &soundId)
-        AudioServicesAddSystemSoundCompletion(soundId, nil, nil, { soundId, _ -> Void in AudioServicesDisposeSystemSoundID(soundId) }, nil)
-        AudioServicesPlaySystemSound(soundId)
+        AudioServicesCreateSystemSoundID(soundUrl as CFURL, &soundId)//创建系统声音
+        AudioServicesAddSystemSoundCompletion(soundId, nil, nil, { soundId, _ -> Void in AudioServicesDisposeSystemSoundID(soundId) }, nil)//设置回调
+        AudioServicesPlaySystemSound(soundId)//播放时长小于等于30s的音频
     }
 }
