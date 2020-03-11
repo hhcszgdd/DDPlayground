@@ -164,3 +164,6 @@ public enum DDNavigationBarStyle {
     case black
     case white
 }
+func deviceType() -> UIUserInterfaceIdiom{
+    return UIDevice.current.userInterfaceIdiom
+}

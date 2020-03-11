@@ -23,6 +23,7 @@ class ViewController: DDViewController {
         CoreDataManager.share.testReadData()
 //        GradientManager.share.testWithView(parentView: view)
         SortFunction.share.test()
+//        view.addSubview( SwitcherView( frame: UIScreen.main.bounds ) )
         
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

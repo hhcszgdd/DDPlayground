@@ -16,20 +16,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = UINavigationController(rootViewController: ViewController())
-        window?.makeKeyAndVisible()
+        window = DDKeyWindow.share
+        DDKeyWindow.share.show()
+        
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
-            DDWindow.share.show()
+            DDAlertWindow.share.show()
         }
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2) {
-            DDWindow.share.hide()
+            DDAlertWindow.share.hide()
         }
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 3) {
-            DDWindow.share.show()
+            DDAlertWindow.share.show()
         }
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 4) {
-            DDWindow.share.hide()
+            DDAlertWindow.share.hide()
         }
         return true
     }
@@ -96,7 +96,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
-class DDWindow: UIWindow {
+ class DDWindow: UIWindow {
+    /// 如果app的window是默认storyboard自带的,添加window无效,除非最初的window自己创建
+    func show() {
+        isHidden = false
+    }
+    func hide() {
+        isHidden = true
+    }
+}
+
+class DDKeyWindow: UIWindow {
+    static let share: DDWindow = {
+        let result = DDWindow(frame: UIScreen.main.bounds)
+        let vc = ViewController()
+         result.rootViewController = UINavigationController(rootViewController: vc)
+        return result
+    }()
+    
+    func switchRootVC(vc: UIViewController)  {
+        rootViewController = UINavigationController(rootViewController: vc)
+    }
+    
+}
+class DDAlertWindow: UIWindow {
     static let share: DDWindow = {
         let result = DDWindow(frame: UIScreen.main.bounds)
         let vc = UIViewController()
@@ -106,13 +129,6 @@ class DDWindow: UIWindow {
          result.rootViewController = UINavigationController(rootViewController: vc)
         return result
     }()
-    /// 如果app的window是默认storyboard自带的,添加window无效,除非window自己创建
-    func show() {
-        Self.share.isHidden = false
-    }
-    func hide() {
-        Self.share.isHidden = true
-    }
-     
-    
+    /// 如果app的window是默认storyboard自带的,添加window无效,除非最初的window自己创建
+
 }
