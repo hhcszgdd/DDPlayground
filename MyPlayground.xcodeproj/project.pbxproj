@@ -380,7 +380,7 @@
 				B34810812414F09700C041FB /* Resources */,
 				B3498DCC2413EC4A00867D6D /* RxSwift */,
 				B3437DB52410B56C004971E1 /* Sort */,
-				B3B539C4240A594F005163CE /* GridentLayer */,
+				B3B539C4240A594F005163CE /* CALayer */,
 				B3B539BC240A5726005163CE /* CoreData */,
 				B3B539A4240A56E9005163CE /* MyPlayground */,
 				B36C2939240A5C96003B57E1 /* DDFramework */,
@@ -437,13 +437,13 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		B3B539C4240A594F005163CE /* GridentLayer */ = {
+		B3B539C4240A594F005163CE /* CALayer */ = {
 			isa = PBXGroup;
 			children = (
 				B36C2931240A5A38003B57E1 /* GradientManager.swift */,
 				B348CEB02419ECA600E56B24 /* DDShapeLayerManager.swift */,
 			);
-			path = GridentLayer;
+			path = CALayer;
 			sourceTree = "<group>";
 		};
 		D590A020B174D7FEC2BA993F /* Pods */ = {
