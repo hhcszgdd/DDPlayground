@@ -21,6 +21,7 @@ class ViewController: DDViewController {
         view.backgroundColor = .white
         CoreDataManager.share.testSaveData()
         CoreDataManager.share.testReadData()
+        testShapLayer()
 //        GradientManager.share.testWithView(parentView: view)
         SortFunction.share.test()
 //        view.addSubview( SwitcherView( frame: UIScreen.main.bounds ) )
@@ -48,6 +49,10 @@ extension ViewController {
         }, completion: { (context) in
             
         })
+    }
+    
+    func testShapLayer() {
+        DDShapeLayerManager.share.testWithView(parentView: view)
     }
 }
 

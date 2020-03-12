@@ -19,18 +19,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = DDKeyWindow.share
         DDKeyWindow.share.show()
         
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
-            DDAlertWindow.share.show()
-        }
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2) {
-            DDAlertWindow.share.hide()
-        }
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 3) {
-            DDAlertWindow.share.show()
-        }
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 4) {
-            DDAlertWindow.share.hide()
-        }
+//        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
+//            DDAlertWindow.share.show()
+//        }
+//        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2) {
+//            DDAlertWindow.share.hide()
+//        }
+//        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 3) {
+//            DDAlertWindow.share.show()
+//        }
+//        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 4) {
+//            DDAlertWindow.share.hide()
+//        }
         return true
     }
 /*

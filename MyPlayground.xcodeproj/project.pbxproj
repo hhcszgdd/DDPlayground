@@ -63,6 +63,7 @@
 		B34810982414F2E300C041FB /* card_drop.m4a in Resources */ = {isa = PBXBuildFile; fileRef = B34810912414F2E300C041FB /* card_drop.m4a */; };
 		B34810992414F2E300C041FB /* card_set.m4a in Resources */ = {isa = PBXBuildFile; fileRef = B34810922414F2E300C041FB /* card_set.m4a */; };
 		B348109A2414F2E300C041FB /* zap_lores.m4a in Resources */ = {isa = PBXBuildFile; fileRef = B34810932414F2E300C041FB /* zap_lores.m4a */; };
+		B348CEB12419ECA600E56B24 /* DDShapeLayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B348CEB02419ECA600E56B24 /* DDShapeLayerManager.swift */; };
 		B3498DCE2413EC7C00867D6D /* DDRxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3498DCD2413EC7C00867D6D /* DDRxViewController.swift */; };
 		B36C2932240A5A38003B57E1 /* GradientManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36C2931240A5A38003B57E1 /* GradientManager.swift */; };
 		B36C293C240A5C96003B57E1 /* DDFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = B36C293A240A5C96003B57E1 /* DDFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -182,6 +183,7 @@
 		B34810912414F2E300C041FB /* card_drop.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = card_drop.m4a; sourceTree = "<group>"; };
 		B34810922414F2E300C041FB /* card_set.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = card_set.m4a; sourceTree = "<group>"; };
 		B34810932414F2E300C041FB /* zap_lores.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = zap_lores.m4a; sourceTree = "<group>"; };
+		B348CEB02419ECA600E56B24 /* DDShapeLayerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDShapeLayerManager.swift; sourceTree = "<group>"; };
 		B3498DCD2413EC7C00867D6D /* DDRxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDRxViewController.swift; sourceTree = "<group>"; };
 		B36C2931240A5A38003B57E1 /* GradientManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientManager.swift; sourceTree = "<group>"; };
 		B36C2938240A5C96003B57E1 /* DDFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DDFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -439,6 +441,7 @@
 			isa = PBXGroup;
 			children = (
 				B36C2931240A5A38003B57E1 /* GradientManager.swift */,
+				B348CEB02419ECA600E56B24 /* DDShapeLayerManager.swift */,
 			);
 			path = GridentLayer;
 			sourceTree = "<group>";
@@ -826,6 +829,7 @@
 				B3B539B0240A56E9005163CE /* MyPlayground.xcdatamodeld in Sources */,
 				B344F4412418872B000583C9 /* SwitcherView.swift in Sources */,
 				B36C2932240A5A38003B57E1 /* GradientManager.swift in Sources */,
+				B348CEB12419ECA600E56B24 /* DDShapeLayerManager.swift in Sources */,
 				B3498DCE2413EC7C00867D6D /* DDRxViewController.swift in Sources */,
 				B3B539AA240A56E9005163CE /* ViewController.swift in Sources */,
 				B3B539A6240A56E9005163CE /* AppDelegate.swift in Sources */,
