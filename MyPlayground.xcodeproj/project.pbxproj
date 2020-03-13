@@ -65,6 +65,9 @@
 		B348109A2414F2E300C041FB /* zap_lores.m4a in Resources */ = {isa = PBXBuildFile; fileRef = B34810932414F2E300C041FB /* zap_lores.m4a */; };
 		B348CEB12419ECA600E56B24 /* DDShapeLayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B348CEB02419ECA600E56B24 /* DDShapeLayerManager.swift */; };
 		B348CEB4241B248C00E56B24 /* DDMultipleThread.swift in Sources */ = {isa = PBXBuildFile; fileRef = B348CEB3241B248C00E56B24 /* DDMultipleThread.swift */; };
+		B348CEBB241BAC2D00E56B24 /* DDAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B348CEBA241BAC2D00E56B24 /* DDAnimation.swift */; };
+		B348CEBD241BAE6B00E56B24 /* DDGoldCupAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B348CEBC241BAE6B00E56B24 /* DDGoldCupAnimator.swift */; };
+		B348CEBF241BB19600E56B24 /* DDEmojiEmitterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B348CEBE241BB19600E56B24 /* DDEmojiEmitterView.swift */; };
 		B3498DCE2413EC7C00867D6D /* DDRxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3498DCD2413EC7C00867D6D /* DDRxViewController.swift */; };
 		B36C2932240A5A38003B57E1 /* GradientManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36C2931240A5A38003B57E1 /* GradientManager.swift */; };
 		B36C293C240A5C96003B57E1 /* DDFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = B36C293A240A5C96003B57E1 /* DDFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -186,6 +189,9 @@
 		B34810932414F2E300C041FB /* zap_lores.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = zap_lores.m4a; sourceTree = "<group>"; };
 		B348CEB02419ECA600E56B24 /* DDShapeLayerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDShapeLayerManager.swift; sourceTree = "<group>"; };
 		B348CEB3241B248C00E56B24 /* DDMultipleThread.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDMultipleThread.swift; sourceTree = "<group>"; };
+		B348CEBA241BAC2D00E56B24 /* DDAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDAnimation.swift; sourceTree = "<group>"; };
+		B348CEBC241BAE6B00E56B24 /* DDGoldCupAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDGoldCupAnimator.swift; sourceTree = "<group>"; };
+		B348CEBE241BB19600E56B24 /* DDEmojiEmitterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDEmojiEmitterView.swift; sourceTree = "<group>"; };
 		B3498DCD2413EC7C00867D6D /* DDRxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDRxViewController.swift; sourceTree = "<group>"; };
 		B36C2931240A5A38003B57E1 /* GradientManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientManager.swift; sourceTree = "<group>"; };
 		B36C2938240A5C96003B57E1 /* DDFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DDFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -366,6 +372,16 @@
 			path = MultipleThread;
 			sourceTree = "<group>";
 		};
+		B348CEB9241BAC1500E56B24 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				B348CEBE241BB19600E56B24 /* DDEmojiEmitterView.swift */,
+				B348CEBC241BAE6B00E56B24 /* DDGoldCupAnimator.swift */,
+				B348CEBA241BAC2D00E56B24 /* DDAnimation.swift */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
 		B3498DCC2413EC4A00867D6D /* RxSwift */ = {
 			isa = PBXGroup;
 			children = (
@@ -387,6 +403,7 @@
 		B3B53999240A56E9005163CE = {
 			isa = PBXGroup;
 			children = (
+				B348CEB9241BAC1500E56B24 /* Animation */,
 				B348CEB2241B245F00E56B24 /* MultipleThread */,
 				B34810812414F09700C041FB /* Resources */,
 				B3498DCC2413EC4A00867D6D /* RxSwift */,
@@ -838,7 +855,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3B539B0240A56E9005163CE /* MyPlayground.xcdatamodeld in Sources */,
+				B348CEBB241BAC2D00E56B24 /* DDAnimation.swift in Sources */,
 				B348CEB4241B248C00E56B24 /* DDMultipleThread.swift in Sources */,
+				B348CEBF241BB19600E56B24 /* DDEmojiEmitterView.swift in Sources */,
+				B348CEBD241BAE6B00E56B24 /* DDGoldCupAnimator.swift in Sources */,
 				B344F4412418872B000583C9 /* SwitcherView.swift in Sources */,
 				B36C2932240A5A38003B57E1 /* GradientManager.swift in Sources */,
 				B348CEB12419ECA600E56B24 /* DDShapeLayerManager.swift in Sources */,

@@ -99,3 +99,32 @@ public enum DDSoundEffect : String {
         AudioServicesPlaySystemSound(soundId)//播放时长小于等于30s的音频
     }
 }
+
+
+extension String {
+    public func convertToImage(font: UIFont  = UIFont.systemFont(ofSize: 84)) -> UIImage? {
+        let size = CGSize(width: font.lineHeight, height: font.lineHeight)
+        UIGraphicsBeginImageContext(size);
+        let context = UIGraphicsGetCurrentContext()
+
+        UIColor.clear.set()
+        let rect = CGRect(origin: CGPoint.zero, size: size)
+        context?.fill(rect)
+        
+        let paragraph = NSMutableParagraphStyle()
+        paragraph.alignment = .center
+        let attributes = [
+            NSAttributedString.Key.font:font,
+            NSAttributedString.Key.paragraphStyle:paragraph
+        ]
+        
+        NSString(string: self).draw(in: rect, withAttributes: attributes)
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        
+        UIGraphicsEndImageContext();
+        
+        
+        
+        return image
+    }
+}

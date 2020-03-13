@@ -11,20 +11,19 @@ import DDUIKit
 import DDFramework
 class ViewController: DDViewController {
     override var naviBarStyle: DDNavigationBarStyle { return .green }
+    lazy var emitterView: DDEmojiEmitterView = {
+        let result = DDEmojiEmitterView(frame: view.bounds)
+        view.addSubview(result)
+        return result
+    }()
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
-        let vc = DDRxViewController()
-        
-        //        let vc = DDCollectionViewController()
-        //        vc.collectionView.sections = [
-        //            DDSection(rows: [  DDRow5(), DDRow(), DDRow1(), DDRow2(), DDRow3() , DDRow4()  ])
-        //        ]
-        
-        navigationController?.pushViewController(vc, animated: true)
+//        testCupAnamation()
+        emitterView.startAnimation()
     }
     
     
@@ -32,6 +31,24 @@ class ViewController: DDViewController {
 
 
 extension ViewController {
+    func testDDCollectionVC() {
+        let vc = DDCollectionViewController()
+        vc.collectionView.sections = [
+            DDSection(rows: [  DDRow5(), DDRow(), DDRow1(), DDRow2(), DDRow3() , DDRow4()  ])
+        ]
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    func testRXSwift() {
+        let vc = DDRxViewController()
+        
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    func testCupAnamation() {
+        DDGoldCupAnimator.show(on: view)
+    }
+    
     func testAutolayout() {
         let ss = UIView()
         ss.setWidth(200)
@@ -53,7 +70,7 @@ extension ViewController {
         curved.backgroundColor = .cyan
         view.addSubview(curved)
         
-//        GradientManager.share.testWithView(parentView: view)
+        //        GradientManager.share.testWithView(parentView: view)
         
         //        view.addSubview( SwitcherView( frame: UIScreen.main.bounds ) )
         
