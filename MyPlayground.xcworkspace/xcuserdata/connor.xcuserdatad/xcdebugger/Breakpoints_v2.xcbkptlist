@@ -30,5 +30,53 @@
             landmarkType = "21">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "04C39753-F1E0-428E-AA1B-193FB8DD3C95"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MultipleThread/DDMultipleThread.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "DDMultipleThread"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "04C39753-F1E0-428E-AA1B-193FB8DD3C95 - 1ab414e6e21858c"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyPlayground.DDMultipleThread.testBlockOperation() -&gt; ()"
+                  moduleName = "MyPlayground"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/connor/Project/MyPlayground/MultipleThread/DDMultipleThread.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "56">
+               </Location>
+               <Location
+                  uuid = "04C39753-F1E0-428E-AA1B-193FB8DD3C95 - aa3cf036c00f16b8"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in MyPlayground.DDMultipleThread.testBlockOperation() -&gt; ()"
+                  moduleName = "MyPlayground"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/connor/Project/MyPlayground/MultipleThread/DDMultipleThread.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "168">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

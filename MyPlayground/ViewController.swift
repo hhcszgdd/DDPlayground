@@ -13,6 +13,8 @@ class ViewController: DDViewController {
     override var naviBarStyle: DDNavigationBarStyle { return .green }
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.perform(NSSelectorFromString("testShapLayer"), with: nil, with: nil)
         let ss = UIView()
         ss.setWidth(200)
         ss.setHeight(200)
@@ -21,10 +23,10 @@ class ViewController: DDViewController {
         view.backgroundColor = .white
         CoreDataManager.share.testSaveData()
         CoreDataManager.share.testReadData()
-        testShapLayer()
 //        GradientManager.share.testWithView(parentView: view)
         SortFunction.share.test()
 //        view.addSubview( SwitcherView( frame: UIScreen.main.bounds ) )
+        DDMultipleThread.share.testGCDAsync()
         
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -51,7 +53,7 @@ extension ViewController {
         })
     }
     
-    func testShapLayer() {
+    @objc func testShapLayer() {
         DDShapeLayerManager.share.testWithView(parentView: view)
     }
 }
