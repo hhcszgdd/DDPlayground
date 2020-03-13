@@ -34,3 +34,31 @@ class DDShapeLayerManager: NSObject {
         parentView.layer.addSublayer(shapeLayer)
     }
 }
+class CurvedView: UIView {
+    
+    let cornerRadius: CGFloat = 24.0
+    var connors: UIRectCorner = [.topLeft, .topRight, .bottomLeft]
+    convenience init(frame: CGRect = CGRect.zero, conners: UIRectCorner) {
+        self.init(frame: frame)
+        self.connors = conners
+    }
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        setMask()
+    }
+    
+    /** Sets a mask on the view to round it's corners
+     */
+    func setMask() {
+        
+        let maskPath = UIBezierPath(roundedRect:self.bounds,
+                                    byRoundingCorners: connors,
+                                    cornerRadii: CGSize(width: cornerRadius, height: cornerRadius))
+        
+        let shape = CAShapeLayer()
+        shape.path = maskPath.cgPath
+        self.layer.mask = shape
+        
+    }
+    
+}

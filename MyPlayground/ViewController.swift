@@ -13,35 +13,60 @@ class ViewController: DDViewController {
     override var naviBarStyle: DDNavigationBarStyle { return .green }
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.perform(NSSelectorFromString("testShapLayer"), with: nil, with: nil)
-        let ss = UIView()
-        ss.setWidth(200)
-        ss.setHeight(200)
-        ss.backgroundColor = .blue
-        view.add(subview: ss, pin: [.top, .left], margin: DDMargins(top: 200, left: 100))
         view.backgroundColor = .white
-        CoreDataManager.share.testSaveData()
-        CoreDataManager.share.testReadData()
-//        GradientManager.share.testWithView(parentView: view)
-        SortFunction.share.test()
-//        view.addSubview( SwitcherView( frame: UIScreen.main.bounds ) )
-        DDMultipleThread.share.testGCDAsync()
-        
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
         let vc = DDRxViewController()
         
-//        let vc = DDCollectionViewController()
-//        vc.collectionView.sections = [
-//            DDSection(rows: [  DDRow5(), DDRow(), DDRow1(), DDRow2(), DDRow3() , DDRow4()  ])
-//        ]
+        //        let vc = DDCollectionViewController()
+        //        vc.collectionView.sections = [
+        //            DDSection(rows: [  DDRow5(), DDRow(), DDRow1(), DDRow2(), DDRow3() , DDRow4()  ])
+        //        ]
         
         navigationController?.pushViewController(vc, animated: true)
     }
     
+    
+}
 
+
+extension ViewController {
+    func testAutolayout() {
+        let ss = UIView()
+        ss.setWidth(200)
+        ss.setHeight(200)
+        ss.backgroundColor = .blue
+        view.add(subview: ss, pin: [.top, .left], margin: DDMargins(top: 200, left: 100))
+    }
+    func performFunctionWithString() {
+        self.perform(NSSelectorFromString("testShapLayer"), with: nil, with: nil)
+    }
+    
+    func testCoreData() {
+        CoreDataManager.share.testSaveData()
+        CoreDataManager.share.testReadData()
+    }
+    
+    func testLayer() {
+        let curved = CurvedView(frame: CGRect(x: 100, y: 300, width: 222, height: 222), conners: [ .topLeft, .bottomRight ])
+        curved.backgroundColor = .cyan
+        view.addSubview(curved)
+        
+//        GradientManager.share.testWithView(parentView: view)
+        
+        //        view.addSubview( SwitcherView( frame: UIScreen.main.bounds ) )
+        
+    }
+    
+    func testQuickSort() {
+        SortFunction.share.test()
+    }
+    
+    func testMutipleThread() {
+        DDMultipleThread.share.testGCDAsync()
+    }
+    
 }
 
 extension ViewController {

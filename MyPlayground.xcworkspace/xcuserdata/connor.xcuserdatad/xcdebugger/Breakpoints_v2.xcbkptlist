@@ -42,8 +42,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "60"
             endingLineNumber = "60"
-            landmarkName = "DDMultipleThread"
-            landmarkType = "3">
+            landmarkName = "testGCDAsync()"
+            landmarkType = "7">
             <Locations>
                <Location
                   uuid = "04C39753-F1E0-428E-AA1B-193FB8DD3C95 - 1ab414e6e21858c"
