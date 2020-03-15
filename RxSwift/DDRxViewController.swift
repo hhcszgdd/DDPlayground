@@ -13,12 +13,35 @@ import RxSwift
 import DDUIKit
 class DDRxViewController: DDViewController {
     let bag = DisposeBag()
-    var o :BlockOperation?
-    var t : URLSessionDataTask?
+    var ob = Observable.from([1,2,3,4,5,6,7])
+    let subjectt = PublishSubject<String>()
     override var naviBarStyle: DDNavigationBarStyle { return .blue }
     override func viewDidLoad() {
         super.viewDidLoad()
-        testBlockOperation()
+        
+        subjectt.subscribe(onNext: { (intValue) in
+            print("1 int value : \(intValue)")
+        }, onError: { (error) in
+            print("1 errorrrrr")
+        }, onCompleted: {
+            print("1 done ")
+        }) {
+            print("1 over")
+        }.disposed(by: bag)
+        
+        subjectt.subscribe(onNext: { (intValue) in
+            print("2 int value : \(intValue)")
+        }, onError: { (error) in
+            print("2 errorrrrr")
+        }, onCompleted: {
+            print("2 done ")
+        }) {
+            print("2 over")
+        }.disposed(by: bag)
+        
+        subjectt.onNext("xxxxx")
+        subjectt.onNext("ooooo")
+//        subjectt.onError(RxError.noElements)
         
         navigationController?.navigationBar.barStyle = .black
         view.backgroundColor = .white
@@ -38,46 +61,18 @@ class DDRxViewController: DDViewController {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         DDSoundEffect.switchTab.playSound()
         super.touchesBegan(touches, with: event)
-        let vc = DDCollectionViewController()
-        vc.collectionView.sections = [
-            DDSection(rows: [  DDRow5(), DDRow(), DDRow1(), DDRow2(), DDRow3() , DDRow4()  ])
-        ]
-        
-        navigationController?.pushViewController(vc, animated: true)
+        subjectt.onNext("ooooo")
+        subjectt.onCompleted()
+//        let vc = DDCollectionViewController()
+//        vc.collectionView.sections = [
+//            DDSection(rows: [  DDRow5(), DDRow(), DDRow1(), DDRow2(), DDRow3() , DDRow4()  ])
+//        ]
+//
+//        navigationController?.pushViewController(vc, animated: true)
     }
     
 }
 
 extension DDRxViewController {
-    func testInvOperation() {
-    }
-    
-    func testBlockOperation() {
-        o = BlockOperation {
-            print("....\(Thread.current)")
-        }
-        o?.addExecutionBlock {
-            DispatchQueue.global().sync {
-                var request = URLRequest(url: URL(string: "https://www.baidu.com")!)
-                request.httpMethod = "GET"
-                self.t = URLSession.shared.dataTask(with: request) { (data, response, error) in
-                    print("ttttt complate")
-                    print("Data: \(String(data: data!, encoding: String.Encoding.utf8))")
-                    print("response: \(response)")
-                    print("error: \(error) ,,,\(Thread.current)")
-                }
-                self.t?.resume()
-                
-            }
-        }
-        //        o?.addDependency(T##op: Operation##Operation)
-        o?.completionBlock = {
-            print("✌️task 1 is over")
-            print(".>>>\(Thread.current)")
-        }
-        o?.start()
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.0000000001) {
-            self.o?.cancel()
-        }
-    }
+   
 }

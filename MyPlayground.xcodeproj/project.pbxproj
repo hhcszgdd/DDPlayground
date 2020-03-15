@@ -84,6 +84,7 @@
 		B3B539BE240A575A005163CE /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B539BD240A575A005163CE /* CoreDataManager.swift */; };
 		B3B539C2240A5811005163CE /* Model1+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B539C0240A5810005163CE /* Model1+CoreDataClass.swift */; };
 		B3B539C3240A5811005163CE /* Model1+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B539C1240A5810005163CE /* Model1+CoreDataProperties.swift */; };
+		B3CBC70F241E235200533300 /* UIView+AutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B3CBC70E241E235200533300 /* UIView+AutoLayout.m */; };
 		FED3F2B8B7551EDFF72B51C2 /* Pods_DDUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACF22C139949AA419D3B9269 /* Pods_DDUIKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -210,6 +211,9 @@
 		B3B539BD240A575A005163CE /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		B3B539C0240A5810005163CE /* Model1+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Model1+CoreDataClass.swift"; sourceTree = "<group>"; };
 		B3B539C1240A5810005163CE /* Model1+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Model1+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B3CBC70C241E235200533300 /* MyPlayground-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyPlayground-Bridging-Header.h"; sourceTree = "<group>"; };
+		B3CBC70D241E235200533300 /* UIView+AutoLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+AutoLayout.h"; sourceTree = "<group>"; };
+		B3CBC70E241E235200533300 /* UIView+AutoLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+AutoLayout.m"; sourceTree = "<group>"; };
 		CC1D198F575D10C70115FD88 /* Pods_MyPlayground.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyPlayground.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D03A255FEC5623E5842F0D2E /* Pods-DDFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDFramework.release.xcconfig"; path = "Target Support Files/Pods-DDFramework/Pods-DDFramework.release.xcconfig"; sourceTree = "<group>"; };
 		D2F04EB6D09CB76B5FF8B8E2 /* Pods_DDFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DDFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -403,6 +407,7 @@
 		B3B53999240A56E9005163CE = {
 			isa = PBXGroup;
 			children = (
+				B3CBC70B241E231B00533300 /* AutoLayout */,
 				B348CEB9241BAC1500E56B24 /* Animation */,
 				B348CEB2241B245F00E56B24 /* MultipleThread */,
 				B34810812414F09700C041FB /* Resources */,
@@ -472,6 +477,16 @@
 				B348CEB02419ECA600E56B24 /* DDShapeLayerManager.swift */,
 			);
 			path = CALayer;
+			sourceTree = "<group>";
+		};
+		B3CBC70B241E231B00533300 /* AutoLayout */ = {
+			isa = PBXGroup;
+			children = (
+				B3CBC70D241E235200533300 /* UIView+AutoLayout.h */,
+				B3CBC70E241E235200533300 /* UIView+AutoLayout.m */,
+				B3CBC70C241E235200533300 /* MyPlayground-Bridging-Header.h */,
+			);
+			path = AutoLayout;
 			sourceTree = "<group>";
 		};
 		D590A020B174D7FEC2BA993F /* Pods */ = {
@@ -614,6 +629,7 @@
 					};
 					B3B539A1240A56E9005163CE = {
 						CreatedOnToolsVersion = 11.2.1;
+						LastSwiftMigration = 1120;
 					};
 				};
 			};
@@ -867,6 +883,7 @@
 				B3B539A6240A56E9005163CE /* AppDelegate.swift in Sources */,
 				B3437DB72410B5A2004971E1 /* SortFunction.swift in Sources */,
 				B3B539BE240A575A005163CE /* CoreDataManager.swift in Sources */,
+				B3CBC70F241E235200533300 /* UIView+AutoLayout.m in Sources */,
 				B3B539A8240A56E9005163CE /* SceneDelegate.swift in Sources */,
 				B3B539C3240A5811005163CE /* Model1+CoreDataProperties.swift in Sources */,
 				B344F4402418872B000583C9 /* ContainerView.swift in Sources */,
@@ -1192,6 +1209,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3G3KPW6FQ7;
 				INFOPLIST_FILE = MyPlayground/Info.plist;
@@ -1201,6 +1219,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = hhcszgd.MyPlayground;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AutoLayout/MyPlayground-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1212,6 +1232,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3G3KPW6FQ7;
 				INFOPLIST_FILE = MyPlayground/Info.plist;
@@ -1221,6 +1242,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = hhcszgd.MyPlayground;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AutoLayout/MyPlayground-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

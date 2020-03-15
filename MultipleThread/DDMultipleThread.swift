@@ -100,4 +100,39 @@ class DDMultipleThread: NSObject {
             print("3")
         }
     }
+    
+    var o :BlockOperation?
+    var t : URLSessionDataTask?
+}
+
+extension DDMultipleThread {
+    
+    func testBlockOperationWithQuery() {
+        o = BlockOperation {
+            print("....\(Thread.current)")
+        }
+        o?.addExecutionBlock {
+            DispatchQueue.global().sync {
+                var request = URLRequest(url: URL(string: "https://www.baidu.com")!)
+                request.httpMethod = "GET"
+                self.t = URLSession.shared.dataTask(with: request) { (data, response, error) in
+                    print("ttttt complate")
+                    print("Data: \(String(data: data!, encoding: String.Encoding.utf8))")
+                    print("response: \(response)")
+                    print("error: \(error) ,,,\(Thread.current)")
+                }
+                self.t?.resume()
+                
+            }
+        }
+        //        o?.addDependency(T##op: Operation##Operation)
+        o?.completionBlock = {
+            print("✌️task 1 is over")
+            print(".>>>\(Thread.current)")
+        }
+        o?.start()
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.0000000001) {
+            self.o?.cancel()
+        }
+    }
 }
