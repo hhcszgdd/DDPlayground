@@ -85,6 +85,7 @@
 		B3B539C2240A5811005163CE /* Model1+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B539C0240A5810005163CE /* Model1+CoreDataClass.swift */; };
 		B3B539C3240A5811005163CE /* Model1+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B539C1240A5810005163CE /* Model1+CoreDataProperties.swift */; };
 		B3CBC70F241E235200533300 /* UIView+AutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B3CBC70E241E235200533300 /* UIView+AutoLayout.m */; };
+		B3CBC712241E2E2C00533300 /* DDSingleInstance.m in Sources */ = {isa = PBXBuildFile; fileRef = B3CBC711241E2E2C00533300 /* DDSingleInstance.m */; };
 		FED3F2B8B7551EDFF72B51C2 /* Pods_DDUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACF22C139949AA419D3B9269 /* Pods_DDUIKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -214,6 +215,8 @@
 		B3CBC70C241E235200533300 /* MyPlayground-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyPlayground-Bridging-Header.h"; sourceTree = "<group>"; };
 		B3CBC70D241E235200533300 /* UIView+AutoLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+AutoLayout.h"; sourceTree = "<group>"; };
 		B3CBC70E241E235200533300 /* UIView+AutoLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+AutoLayout.m"; sourceTree = "<group>"; };
+		B3CBC710241E2E2C00533300 /* DDSingleInstance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDSingleInstance.h; sourceTree = "<group>"; };
+		B3CBC711241E2E2C00533300 /* DDSingleInstance.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDSingleInstance.m; sourceTree = "<group>"; };
 		CC1D198F575D10C70115FD88 /* Pods_MyPlayground.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyPlayground.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D03A255FEC5623E5842F0D2E /* Pods-DDFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDFramework.release.xcconfig"; path = "Target Support Files/Pods-DDFramework/Pods-DDFramework.release.xcconfig"; sourceTree = "<group>"; };
 		D2F04EB6D09CB76B5FF8B8E2 /* Pods_DDFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DDFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -485,6 +488,8 @@
 				B3CBC70D241E235200533300 /* UIView+AutoLayout.h */,
 				B3CBC70E241E235200533300 /* UIView+AutoLayout.m */,
 				B3CBC70C241E235200533300 /* MyPlayground-Bridging-Header.h */,
+				B3CBC710241E2E2C00533300 /* DDSingleInstance.h */,
+				B3CBC711241E2E2C00533300 /* DDSingleInstance.m */,
 			);
 			path = AutoLayout;
 			sourceTree = "<group>";
@@ -888,6 +893,7 @@
 				B3B539C3240A5811005163CE /* Model1+CoreDataProperties.swift in Sources */,
 				B344F4402418872B000583C9 /* ContainerView.swift in Sources */,
 				B3B539C2240A5811005163CE /* Model1+CoreDataClass.swift in Sources */,
+				B3CBC712241E2E2C00533300 /* DDSingleInstance.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

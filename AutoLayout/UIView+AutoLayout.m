@@ -7,10 +7,13 @@
 //
 
 #import "UIView+AutoLayout.h"
-
+#import "MyPlayground-Swift.h"
+#import "DDSingleInstance.h"
 @implementation UIView (AutoLayout)
 
 - (void)setupHeight:(CGFloat)height{
+//    [DDMultipleThread share];
+//    [[DDMultipleThread share] testGCDSync];
     if (!self.translatesAutoresizingMaskIntoConstraints) {
         self.translatesAutoresizingMaskIntoConstraints = NO;
     }

@@ -9,11 +9,11 @@
 import UIKit
 
 class DDMultipleThread: NSObject {
-    static let share: DDMultipleThread = DDMultipleThread()
+    @objc static let share: DDMultipleThread = DDMultipleThread()
     var blockOperation: BlockOperation?
     var queue : OperationQueue = OperationQueue()
     lazy var dispatchGroup = DispatchGroup()
-    func testGCDSync() {
+    @objc func testGCDSync() {
         DispatchQueue.global().async(group: dispatchGroup, execute: DispatchWorkItem(block: {
             print("task 1")
         }))
