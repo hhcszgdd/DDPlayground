@@ -7,8 +7,6 @@
 //
 
 import UIKit
-import DDUIKit
-import DDFramework
 class ViewController: DDViewController {
     override var naviBarStyle: DDNavigationBarStyle { return .green }
     lazy var emitterView: DDEmojiEmitterView = {
@@ -18,7 +16,7 @@ class ViewController: DDViewController {
     }()
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
+        view.backgroundColor = UIColor(named: "DDDarkAndWhireColor")
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
