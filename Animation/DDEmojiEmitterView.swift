@@ -1,6 +1,5 @@
 // Copyright © 2019 , Inc. All rights reserved.
 import UIKit
-import DDFramework
 final class DDEmojiEmitterView : UIView {
     // MARK: Nested
     enum Direction {

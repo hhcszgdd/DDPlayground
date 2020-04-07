@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import DDFramework
+//import DDFramework
 open class DDRow3: DDRow {
     lazy var label: UILabel = {
          let result = UILabel()

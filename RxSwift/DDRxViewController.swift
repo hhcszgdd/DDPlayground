@@ -7,10 +7,8 @@
 //
 
 import UIKit
-import DDFramework
 import RxCocoa
 import RxSwift
-import DDUIKit
 class DDRxViewController: DDViewController {
     let bag = DisposeBag()
     var ob = Observable.from([1,2,3,4,5,6,7])
