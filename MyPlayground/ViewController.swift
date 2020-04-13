@@ -8,6 +8,12 @@
 
 import UIKit
 class ViewController: DDViewController {
+    lazy var tableView: UITableView = {
+        let result = UITableView(frame: self.view.bounds, style: UITableView.Style.plain)
+        result.delegate = self
+        result.dataSource = self
+        return result
+    }()
     override var naviBarStyle: DDNavigationBarStyle { return .green }
     lazy var emitterView: DDEmojiEmitterView = {
         let result = DDEmojiEmitterView(frame: view.bounds)
@@ -16,80 +22,68 @@ class ViewController: DDViewController {
     }()
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor(named: "DDDarkAndWhireColor")
+        view.add(subview: tableView, pin: .all)
+        if #available(iOS 11.0, *) {
+            view.backgroundColor = UIColor(named: "DDDarkAndWhireColor")
+        } else {
+            // Fallback on earlier versions
+            view.backgroundColor = UIColor.darkGray
+        }
     }
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        super.touchesBegan(touches, with: event)
-        testGameDemoVC()
-//        testRXSwift()
-//        testCupAnamation()
-//        emitterView.startAnimation()
+}
+
+extension ViewController : UITableViewDelegate, UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return DDAction.allCases.count;
     }
     
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell: UITableViewCell!
+        if let c = tableView.dequeueReusableCell(withIdentifier: "DDCell") {
+            cell = c
+        }else {
+            cell = UITableViewCell(style: UITableViewCell.CellStyle.subtitle, reuseIdentifier: "DDCell")
+        }
+        cell.textLabel?.text = "will be perform action : \(DDAction.allCases[indexPath.row].rawValue)"
+        return cell
+    }
     
+    @available(iOS 13.0, *)
+    func tableView(_ tableView: UITableView, contextMenuConfigurationForRowAt indexPath: IndexPath, point: CGPoint) -> UIContextMenuConfiguration? {
+        
+        let actionProvider : UIContextMenuActionProvider =  { suggest in
+            
+            let editMenu = UIMenu(title: "Edit...", children: [
+                UIAction(title: "Copy", handler: { (action) in
+                    print("copy")
+                }),
+                UIAction(title: "paste", handler: { (action) in
+                    print("paste")
+                })
+            ])
+            return UIMenu(title: "share...", children: [
+                UIAction(title: "share", handler: { (action) in
+                    print("share")
+                }),
+                editMenu,
+                UIAction(title: "delete", handler: { (action) in
+                    print("delete")
+                })
+            ])
+            
+        }
+        return UIContextMenuConfiguration(identifier: "Unique-ID" as NSCopying, previewProvider: nil , actionProvider: actionProvider)
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        willBePerformAction(action: DDAction.allCases[indexPath.row])
+    }
 }
 
 
 extension ViewController {
-    
-    func testGameDemoVC() {
-        let vc = DDGameDemoVC()
-        navigationController?.pushViewController(vc, animated: true)
-    }
-    
-    func testDDCollectionVC() {
-        let vc = DDCollectionViewController()
-        vc.collectionView.sections = [
-            DDSection(rows: [  DDRow5(), DDRow(), DDRow1(), DDRow2(), DDRow3() , DDRow4()  ])
-        ]
-        navigationController?.pushViewController(vc, animated: true)
-    }
-    
-    func testRXSwift() {
-        let vc = DDRxViewController()
-        
-        navigationController?.pushViewController(vc, animated: true)
-    }
-    
-    func testCupAnamation() {
-        DDGoldCupAnimator.show(on: view)
-    }
-    
-    func testAutolayout() {
-        let ss = UIView()
-        ss.setWidth(200)
-        ss.setHeight(200)
-        ss.backgroundColor = .blue
-        view.add(subview: ss, pin: [.top, .left], margin: DDMargins(top: 200, left: 100))
-    }
-    func performFunctionWithString() {
-        self.perform(NSSelectorFromString("testShapLayer"), with: nil, with: nil)
-    }
-    
-    func testCoreData() {
-        CoreDataManager.share.testSaveData()
-        CoreDataManager.share.testReadData()
-    }
-    
-    func testLayer() {
-        let curved = CurvedView(frame: CGRect(x: 100, y: 300, width: 222, height: 222), conners: [ .topLeft, .bottomRight ])
-        curved.backgroundColor = .cyan
-        view.addSubview(curved)
-        
-        //        GradientManager.share.testWithView(parentView: view)
-        
-        //        view.addSubview( SwitcherView( frame: UIScreen.main.bounds ) )
-        
-    }
-    
-    func testQuickSort() {
-        SortFunction.share.test()
-    }
-    
-    func testMutipleThread() {
-        DDMultipleThread.share.testGCDAsync()
-    }
-    
+
 }
 
 extension ViewController {
@@ -100,9 +94,5 @@ extension ViewController {
             
         })
     }
-    
-    @objc func testShapLayer() {
-        DDShapeLayerManager.share.testWithView(parentView: view)
-    }
-}
 
+}

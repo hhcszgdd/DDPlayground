@@ -39,6 +39,23 @@ open class DDViewController: UIViewController {
         setupNavigationBarAppearance()
     }
     
+    override open func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        super.traitCollectionDidChange(previousTraitCollection)
+        if ((self.traitCollection.horizontalSizeClass != previousTraitCollection?.horizontalSizeClass)
+               || ( self.traitCollection.verticalSizeClass != previousTraitCollection?.verticalSizeClass)) {
+               // screen has rotated,if you want change layout view, do it
+            print("need change view layout")
+            if self.traitCollection.verticalSizeClass == .compact {
+                print("横屏")
+            } else {
+                print("竖屏")
+            }
+        } else {
+            // needn't change view layout
+            print("needn't change view layout")
+        }
+    }
+    
     lazy var backButton: UIButton = {
         let result = UIButton(frame: CGRect(x: 0, y: 0, width: 44, height: 44))
 //        result.setImage(#imageLiteral(resourceName: "bar-back-arrow"), for: UIControl.State.normal)
@@ -48,6 +65,10 @@ open class DDViewController: UIViewController {
 }
 
 extension DDViewController {
+    func testMenu() {
+//        UIMenu(title: 'xx\\')
+    }
+    
     func setBackButton()  {
         
         if #available(iOS 13.0, *) {

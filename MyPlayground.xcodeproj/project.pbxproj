@@ -84,6 +84,7 @@
 		B3B539C3240A5811005163CE /* Model1+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B539C1240A5810005163CE /* Model1+CoreDataProperties.swift */; };
 		B3CAB4D024445391000AE3ED /* DDGameDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CAB4CF24445391000AE3ED /* DDGameDemoVC.swift */; };
 		B3CAB4D2244454C3000AE3ED /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = B3CAB4D1244454C3000AE3ED /* art.scnassets */; };
+		B3CAB4D424446EB9000AE3ED /* TestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CAB4D324446EB9000AE3ED /* TestCase.swift */; };
 		B3CBC70F241E235200533300 /* UIView+AutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B3CBC70E241E235200533300 /* UIView+AutoLayout.m */; };
 		B3CBC712241E2E2C00533300 /* DDSingleInstance.m in Sources */ = {isa = PBXBuildFile; fileRef = B3CBC711241E2E2C00533300 /* DDSingleInstance.m */; };
 /* End PBXBuildFile section */
@@ -198,6 +199,7 @@
 		B3B539C1240A5810005163CE /* Model1+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Model1+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		B3CAB4CF24445391000AE3ED /* DDGameDemoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDGameDemoVC.swift; sourceTree = "<group>"; };
 		B3CAB4D1244454C3000AE3ED /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		B3CAB4D324446EB9000AE3ED /* TestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCase.swift; sourceTree = "<group>"; };
 		B3CBC70C241E235200533300 /* MyPlayground-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyPlayground-Bridging-Header.h"; sourceTree = "<group>"; };
 		B3CBC70D241E235200533300 /* UIView+AutoLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+AutoLayout.h"; sourceTree = "<group>"; };
 		B3CBC70E241E235200533300 /* UIView+AutoLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+AutoLayout.m"; sourceTree = "<group>"; };
@@ -432,6 +434,7 @@
 				B3B539A5240A56E9005163CE /* AppDelegate.swift */,
 				B3B539A7240A56E9005163CE /* SceneDelegate.swift */,
 				B3B539A9240A56E9005163CE /* ViewController.swift */,
+				B3CAB4D324446EB9000AE3ED /* TestCase.swift */,
 				B3B539AB240A56E9005163CE /* Main.storyboard */,
 				B3CAB4D1244454C3000AE3ED /* art.scnassets */,
 				B3B539B1240A56EB005163CE /* Assets.xcassets */,
@@ -737,6 +740,7 @@
 				B3A85320243C78D200D28217 /* DDCollectionView.swift in Sources */,
 				B3498DCE2413EC7C00867D6D /* DDRxViewController.swift in Sources */,
 				B3CAB4D024445391000AE3ED /* DDGameDemoVC.swift in Sources */,
+				B3CAB4D424446EB9000AE3ED /* TestCase.swift in Sources */,
 				B3A85322243C78D200D28217 /* DDRow.swift in Sources */,
 				B3A85328243C78D200D28217 /* DDCollectionViewController.swift in Sources */,
 				B3A85325243C78D200D28217 /* DDRow3.swift in Sources */,
@@ -952,6 +956,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B3XCTK2PBT;
 				INFOPLIST_FILE = MyPlayground/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -975,6 +980,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B3XCTK2PBT;
 				INFOPLIST_FILE = MyPlayground/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

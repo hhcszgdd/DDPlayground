@@ -27,10 +27,14 @@ class DDMultipleThread: NSObject {
         }))
     }
     func testThread() {
-        let thread = Thread {
-            print("nothing necessary is be test")
+        if #available(iOS 10.0, *) {
+            let thread = Thread {
+                print("nothing necessary is be test")
+            }
+            thread.start()
+        } else {
+            // Fallback on earlier versions
         }
-        thread.start()
     }
     func testGCDAsync() {
         DispatchQueue.global().async(group: dispatchGroup, execute: DispatchWorkItem(block: {

@@ -105,7 +105,6 @@ class DDGameDemoVC: DDViewController {
     }
     
     override var shouldAutorotate: Bool {
-        super.shouldAutorotate
         return true
     }
     

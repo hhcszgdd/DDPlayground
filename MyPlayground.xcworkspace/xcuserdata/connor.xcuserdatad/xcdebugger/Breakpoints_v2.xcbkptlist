@@ -24,8 +24,8 @@
             filePath = "DDUIKit/DDViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "94"
-            endingLineNumber = "94"
+            startingLineNumber = "115"
+            endingLineNumber = "115"
             landmarkName = "DDViewController"
             landmarkType = "21">
          </BreakpointContent>
@@ -97,16 +97,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "A7F9708F-4CD9-4A5F-9E4A-897023A1B740"
+            uuid = "C674930F-4E4F-44FC-A7B3-BAFA81819B01"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DDUIKit/DDViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "77"
-            endingLineNumber = "77"
-            landmarkName = "setupNavigationBarAppearance()"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "traitCollectionDidChange(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

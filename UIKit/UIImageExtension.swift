@@ -13,12 +13,17 @@ extension UIImage {
         // Resizing image
         let scale: CGFloat = 0.2
         let size = CGSize(width: self.size.width * scale, height: self.size.height * scale)
-        let renderer = UIGraphicsImageRenderer(size: size)
-        let resizedImage = renderer.image { (context) in
-            self.draw(in: CGRect(origin: CGPoint.zero, size: size))
+        if #available(iOS 10.0, *) {
+            let renderer = UIGraphicsImageRenderer(size: size)
+            let resizedImage = renderer.image { (context) in
+                self.draw(in: CGRect(origin: CGPoint.zero, size: size))
+            }
+            
+            return resizedImage
+        } else {
+            // Fallback on earlier versions
+            return UIImage.resizingImageSizeCommend()
         }
-        
-        return resizedImage
     }
     
     /// if you want show the real size of image , set : imageView.contentMode = .center
@@ -48,14 +53,19 @@ extension UIImage {
     }
     
     static func createImageCommend(bounds:CGRect, color: UIColor) -> UIImage {
-        let renderer = UIGraphicsImageRenderer(size: bounds.size)
-        let image = renderer.image { (context) in
-            color.setFill()
-            let path = UIBezierPath(roundedRect: bounds, byRoundingCorners: UIRectCorner.allCorners, cornerRadii: CGSize(width: 20, height: 20))
-            path.addClip()
-            UIRectFill(bounds)
+        if #available(iOS 10.0, *) {
+            let renderer = UIGraphicsImageRenderer(size: bounds.size)
+            let image = renderer.image { (context) in
+                color.setFill()
+                let path = UIBezierPath(roundedRect: bounds, byRoundingCorners: UIRectCorner.allCorners, cornerRadii: CGSize(width: 20, height: 20))
+                path.addClip()
+                UIRectFill(bounds)
+            }
+            return image
+        } else {
+            // Fallback on earlier versions
+            return createImageUncommend(bounds: bounds, color: color)
         }
-        return image
     }
 }
 
