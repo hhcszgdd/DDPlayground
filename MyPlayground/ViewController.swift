@@ -20,7 +20,8 @@ class ViewController: DDViewController {
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
-        testRXSwift()
+        testGameDemoVC()
+//        testRXSwift()
 //        testCupAnamation()
 //        emitterView.startAnimation()
     }
@@ -30,6 +31,12 @@ class ViewController: DDViewController {
 
 
 extension ViewController {
+    
+    func testGameDemoVC() {
+        let vc = DDGameDemoVC()
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
     func testDDCollectionVC() {
         let vc = DDCollectionViewController()
         vc.collectionView.sections = [

@@ -12,7 +12,15 @@ open class DDViewController: UIViewController {
     open override var preferredStatusBarStyle: UIStatusBarStyle {
         return naviBarStyle.statusBarStyle
     }
-    
+    override open var prefersStatusBarHidden: Bool { return false }
+    override open var shouldAutorotate: Bool { return true }
+    override open var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        if UIDevice.current.userInterfaceIdiom == .phone {
+            return .allButUpsideDown
+        } else {
+            return .all
+        }
+    }
     /// be overide
     open var naviBarStyle: DDNavigationBarStyle {
         return .white
@@ -59,6 +67,7 @@ extension DDViewController {
             // ios 13下设置导航栏背景色
             if navigationItem.standardAppearance == nil {
                 navigationItem.standardAppearance = UINavigationBarAppearance()
+                navigationItem.standardAppearance?.configureWithDefaultBackground()
                 navigationItem.standardAppearance?.backgroundColor = naviBarStyle.barColor
                 navigationItem.standardAppearance?.setBackIndicatorImage(#imageLiteral(resourceName: "back-arrow"), transitionMaskImage: #imageLiteral(resourceName: "back-arrow"))//设置返回键
             }
@@ -163,7 +172,4 @@ public enum DDNavigationBarStyle {
     case blue
     case black
     case white
-}
-func deviceType() -> UIUserInterfaceIdiom{
-    return UIDevice.current.userInterfaceIdiom
 }

@@ -82,6 +82,8 @@
 		B3B539BE240A575A005163CE /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B539BD240A575A005163CE /* CoreDataManager.swift */; };
 		B3B539C2240A5811005163CE /* Model1+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B539C0240A5810005163CE /* Model1+CoreDataClass.swift */; };
 		B3B539C3240A5811005163CE /* Model1+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B539C1240A5810005163CE /* Model1+CoreDataProperties.swift */; };
+		B3CAB4D024445391000AE3ED /* DDGameDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CAB4CF24445391000AE3ED /* DDGameDemoVC.swift */; };
+		B3CAB4D2244454C3000AE3ED /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = B3CAB4D1244454C3000AE3ED /* art.scnassets */; };
 		B3CBC70F241E235200533300 /* UIView+AutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B3CBC70E241E235200533300 /* UIView+AutoLayout.m */; };
 		B3CBC712241E2E2C00533300 /* DDSingleInstance.m in Sources */ = {isa = PBXBuildFile; fileRef = B3CBC711241E2E2C00533300 /* DDSingleInstance.m */; };
 /* End PBXBuildFile section */
@@ -194,6 +196,8 @@
 		B3B539BD240A575A005163CE /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		B3B539C0240A5810005163CE /* Model1+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Model1+CoreDataClass.swift"; sourceTree = "<group>"; };
 		B3B539C1240A5810005163CE /* Model1+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Model1+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B3CAB4CF24445391000AE3ED /* DDGameDemoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDGameDemoVC.swift; sourceTree = "<group>"; };
+		B3CAB4D1244454C3000AE3ED /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		B3CBC70C241E235200533300 /* MyPlayground-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyPlayground-Bridging-Header.h"; sourceTree = "<group>"; };
 		B3CBC70D241E235200533300 /* UIView+AutoLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+AutoLayout.h"; sourceTree = "<group>"; };
 		B3CBC70E241E235200533300 /* UIView+AutoLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+AutoLayout.m"; sourceTree = "<group>"; };
@@ -391,6 +395,7 @@
 		B3B53999240A56E9005163CE = {
 			isa = PBXGroup;
 			children = (
+				B3CAB4CE24445364000AE3ED /* Game */,
 				B3A85310243C68EB00D28217 /* UIKit */,
 				B392E322241FD42D005299EE /* Map */,
 				B3CBC70B241E231B00533300 /* AutoLayout */,
@@ -428,6 +433,7 @@
 				B3B539A7240A56E9005163CE /* SceneDelegate.swift */,
 				B3B539A9240A56E9005163CE /* ViewController.swift */,
 				B3B539AB240A56E9005163CE /* Main.storyboard */,
+				B3CAB4D1244454C3000AE3ED /* art.scnassets */,
 				B3B539B1240A56EB005163CE /* Assets.xcassets */,
 				B3B539B3240A56EB005163CE /* LaunchScreen.storyboard */,
 				B3B539B6240A56EB005163CE /* Info.plist */,
@@ -461,6 +467,14 @@
 				B348CEB02419ECA600E56B24 /* DDShapeLayerManager.swift */,
 			);
 			path = CALayer;
+			sourceTree = "<group>";
+		};
+		B3CAB4CE24445364000AE3ED /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				B3CAB4CF24445391000AE3ED /* DDGameDemoVC.swift */,
+			);
+			path = Game;
 			sourceTree = "<group>";
 		};
 		B3CBC70B241E231B00533300 /* AutoLayout */ = {
@@ -614,6 +628,7 @@
 				B34810952414F2E300C041FB /* digi_plink.m4a in Resources */,
 				B344F45D24188A8A000583C9 /* collectBig.mp3 in Resources */,
 				B348108A2414F1E000C041FB /* SharedImages.xcassets in Resources */,
+				B3CAB4D2244454C3000AE3ED /* art.scnassets in Resources */,
 				B344F46C24188A8A000583C9 /* Step_rock_09.mp3 in Resources */,
 				B344F46D24188A8A000583C9 /* hitEnemy.wav in Resources */,
 				B344F46124188A8A000583C9 /* ouch_firehit.mp3 in Resources */,
@@ -721,6 +736,7 @@
 				B348CEB12419ECA600E56B24 /* DDShapeLayerManager.swift in Sources */,
 				B3A85320243C78D200D28217 /* DDCollectionView.swift in Sources */,
 				B3498DCE2413EC7C00867D6D /* DDRxViewController.swift in Sources */,
+				B3CAB4D024445391000AE3ED /* DDGameDemoVC.swift in Sources */,
 				B3A85322243C78D200D28217 /* DDRow.swift in Sources */,
 				B3A85328243C78D200D28217 /* DDCollectionViewController.swift in Sources */,
 				B3A85325243C78D200D28217 /* DDRow3.swift in Sources */,
@@ -945,7 +961,7 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "AutoLayout/MyPlayground-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -967,7 +983,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "AutoLayout/MyPlayground-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
