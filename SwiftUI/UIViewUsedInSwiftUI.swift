@@ -42,7 +42,7 @@ struct ViewUsedInSwiftUI: UIViewRepresentable{
     @Binding var value: Double
     func makeUIView(context: UIViewRepresentableContext<ViewUsedInSwiftUI>) -> UIViewUsedInSwiftUI {
 //        return UIViewUsedInSwiftUI(frame: CGRect(x: 0, y: 0, width: 100, height: 200))
-        return UIViewUsedInSwiftUI(num: 22.22)
+        return UIViewUsedInSwiftUI(num: value)
     }
     
     func updateUIView(_ uiView: UIViewUsedInSwiftUI, context: UIViewRepresentableContext<ViewUsedInSwiftUI>) {
