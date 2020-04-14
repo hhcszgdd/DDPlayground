@@ -19,6 +19,7 @@ enum DDAction: String , CaseIterable {
     case coreData
     case selWithString
     case emitterView
+    case swiftUI
 }
 
 extension ViewController {
@@ -45,12 +46,22 @@ extension ViewController {
             performFunctionWithString()
         case .emitterView:
             testEmitterView()
+        case .swiftUI:
+            testSwiftUI()
         }
     }
     
 }
-
+import SwiftUI
 extension ViewController {
+    func testSwiftUI() {
+        if #available(iOS 13.0, *) {
+            let vc = UIHostingController(rootView: ContentView())
+                // ios 13下设置导航栏背景色
+            vc.setupNavigationBarAppearance(style:.blue)
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+    }
     
     func testGameDemoVC() {
         let vc = DDGameDemoVC()

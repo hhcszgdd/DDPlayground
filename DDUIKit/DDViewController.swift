@@ -8,6 +8,8 @@
 
 import UIKit
 
+
+
 open class DDViewController: UIViewController {
     open override var preferredStatusBarStyle: UIStatusBarStyle {
         return naviBarStyle.statusBarStyle
@@ -21,14 +23,13 @@ open class DDViewController: UIViewController {
             return .all
         }
     }
-    /// be overide
-    open var naviBarStyle: DDNavigationBarStyle {
+    /// be overide by subViewController
+    var naviBarStyle: DDNavigationBarStyle {
         return .white
     }
     
     override open func viewDidLoad() {
         super.viewDidLoad()
-//        view.frame.origin.y = 0
         setBackButton()
         
     }
@@ -36,7 +37,7 @@ open class DDViewController: UIViewController {
     open override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.setNavigationBarHidden(false  , animated: true )
-        setupNavigationBarAppearance()
+        setupNavigationBarAppearance(style:self.naviBarStyle)
     }
     
     override open func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
@@ -60,14 +61,18 @@ open class DDViewController: UIViewController {
         let result = UIButton(frame: CGRect(x: 0, y: 0, width: 44, height: 44))
 //        result.setImage(#imageLiteral(resourceName: "bar-back-arrow"), for: UIControl.State.normal)
         result.adjustsImageWhenHighlighted = false
+        result.addTarget(self , action: #selector(backBtnClick), for: UIControl.Event.touchUpInside)//no use
         return result
     }()
 }
 
 extension DDViewController {
-    func testMenu() {
-//        UIMenu(title: 'xx\\')
+    @objc func testMenu() {
     }
+    
+     @objc func backBtnClick() {
+        print("xxxxxxxx")
+        }
     
     func setBackButton()  {
         
@@ -82,38 +87,6 @@ extension DDViewController {
         }
     }
     
-    func setupNavigationBarAppearance() {
-        navigationController?.navigationBar.tintColor = naviBarStyle.backItemTintColor
-        if #available(iOS 13.0, *) {
-            // ios 13下设置导航栏背景色
-            if navigationItem.standardAppearance == nil {
-                navigationItem.standardAppearance = UINavigationBarAppearance()
-                navigationItem.standardAppearance?.configureWithDefaultBackground()
-                navigationItem.standardAppearance?.backgroundColor = naviBarStyle.barColor
-                navigationItem.standardAppearance?.setBackIndicatorImage(#imageLiteral(resourceName: "back-arrow"), transitionMaskImage: #imageLiteral(resourceName: "back-arrow"))//设置返回键
-            }
-            
-        }else {
-            // TO do
-            navigationController?.navigationBar.barStyle = naviBarStyle.naviBarStyle
-            //true ,vc.view.origin.y 为0, 否则等于导航栏高度
-//            navigationController?.navigationBar.isTranslucent = false
-            navigationController?.navigationBar.barTintColor = naviBarStyle.barColor
-            
-//            navigationController?.navigationBar.backgroundColor = naviBarStyle.barColor
-            
-            navigationController?.navigationBar.tintColor = naviBarStyle.backItemTintColor
-            navigationController?.navigationBar.layoutIfNeeded()
-        }
-    }
-    
-    
-    
-    
-    
-//    @objc open func pop() {
-//        self.navigationController?.popViewController(animated: true)
-//    }
 }
 
 public enum DDNavigationBarStyle {
@@ -193,4 +166,42 @@ public enum DDNavigationBarStyle {
     case blue
     case black
     case white
+}
+
+protocol DDNavigationBarAppearenceDelegate {
+    var naviBarStyle: DDNavigationBarStyle {get}
+}
+
+extension  DDNavigationBarAppearenceDelegate {
+//    /// default implament
+    var naviBarStyle: DDNavigationBarStyle {
+        return .white
+    }
+}
+
+extension UIViewController: DDNavigationBarAppearenceDelegate {
+    func setupNavigationBarAppearance(style:DDNavigationBarStyle) {
+         navigationController?.navigationBar.tintColor = style.backItemTintColor
+                if #available(iOS 13.0, *) {
+                    // ios 13下设置导航栏背景色
+                    if navigationItem.standardAppearance == nil {
+                        navigationItem.standardAppearance = UINavigationBarAppearance()
+                        navigationItem.standardAppearance?.configureWithDefaultBackground()
+                        navigationItem.standardAppearance?.backgroundColor = style.barColor
+                        navigationItem.standardAppearance?.setBackIndicatorImage(#imageLiteral(resourceName: "back-arrow"), transitionMaskImage: #imageLiteral(resourceName: "back-arrow"))//设置返回键
+                    }
+                    
+                }else {
+                    // TO do
+                    navigationController?.navigationBar.barStyle = style.naviBarStyle
+                    //true ,vc.view.origin.y 为0, 否则等于导航栏高度
+        //            navigationController?.navigationBar.isTranslucent = false
+                    navigationController?.navigationBar.barTintColor = style.barColor
+                    
+        //            navigationController?.navigationBar.backgroundColor = naviBarStyle.barColor
+                    
+                    navigationController?.navigationBar.tintColor = style.backItemTintColor
+                    navigationController?.navigationBar.layoutIfNeeded()
+                }
+    }
 }

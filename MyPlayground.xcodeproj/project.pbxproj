@@ -85,6 +85,9 @@
 		B3CAB4D024445391000AE3ED /* DDGameDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CAB4CF24445391000AE3ED /* DDGameDemoVC.swift */; };
 		B3CAB4D2244454C3000AE3ED /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = B3CAB4D1244454C3000AE3ED /* art.scnassets */; };
 		B3CAB4D424446EB9000AE3ED /* TestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CAB4D324446EB9000AE3ED /* TestCase.swift */; };
+		B3CAB4D7244474FC000AE3ED /* InteractionWithUIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CAB4D6244474FC000AE3ED /* InteractionWithUIKit.swift */; };
+		B3CAB4D9244475D4000AE3ED /* UIVCUsedInSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CAB4D8244475D4000AE3ED /* UIVCUsedInSwiftUI.swift */; };
+		B3CAB4DB24447B62000AE3ED /* UIViewUsedInSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CAB4DA24447B62000AE3ED /* UIViewUsedInSwiftUI.swift */; };
 		B3CBC70F241E235200533300 /* UIView+AutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B3CBC70E241E235200533300 /* UIView+AutoLayout.m */; };
 		B3CBC712241E2E2C00533300 /* DDSingleInstance.m in Sources */ = {isa = PBXBuildFile; fileRef = B3CBC711241E2E2C00533300 /* DDSingleInstance.m */; };
 /* End PBXBuildFile section */
@@ -200,6 +203,9 @@
 		B3CAB4CF24445391000AE3ED /* DDGameDemoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDGameDemoVC.swift; sourceTree = "<group>"; };
 		B3CAB4D1244454C3000AE3ED /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		B3CAB4D324446EB9000AE3ED /* TestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCase.swift; sourceTree = "<group>"; };
+		B3CAB4D6244474FC000AE3ED /* InteractionWithUIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractionWithUIKit.swift; sourceTree = "<group>"; };
+		B3CAB4D8244475D4000AE3ED /* UIVCUsedInSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIVCUsedInSwiftUI.swift; sourceTree = "<group>"; };
+		B3CAB4DA24447B62000AE3ED /* UIViewUsedInSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewUsedInSwiftUI.swift; sourceTree = "<group>"; };
 		B3CBC70C241E235200533300 /* MyPlayground-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyPlayground-Bridging-Header.h"; sourceTree = "<group>"; };
 		B3CBC70D241E235200533300 /* UIView+AutoLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+AutoLayout.h"; sourceTree = "<group>"; };
 		B3CBC70E241E235200533300 /* UIView+AutoLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+AutoLayout.m"; sourceTree = "<group>"; };
@@ -397,6 +403,7 @@
 		B3B53999240A56E9005163CE = {
 			isa = PBXGroup;
 			children = (
+				B3CAB4D5244474CA000AE3ED /* SwiftUI */,
 				B3CAB4CE24445364000AE3ED /* Game */,
 				B3A85310243C68EB00D28217 /* UIKit */,
 				B392E322241FD42D005299EE /* Map */,
@@ -478,6 +485,16 @@
 				B3CAB4CF24445391000AE3ED /* DDGameDemoVC.swift */,
 			);
 			path = Game;
+			sourceTree = "<group>";
+		};
+		B3CAB4D5244474CA000AE3ED /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				B3CAB4D6244474FC000AE3ED /* InteractionWithUIKit.swift */,
+				B3CAB4D8244475D4000AE3ED /* UIVCUsedInSwiftUI.swift */,
+				B3CAB4DA24447B62000AE3ED /* UIViewUsedInSwiftUI.swift */,
+			);
+			path = SwiftUI;
 			sourceTree = "<group>";
 		};
 		B3CBC70B241E231B00533300 /* AutoLayout */ = {
@@ -726,9 +743,11 @@
 			files = (
 				B3B539B0240A56E9005163CE /* MyPlayground.xcdatamodeld in Sources */,
 				B392E32A241FD488005299EE /* DDMapViewController.swift in Sources */,
+				B3CAB4D9244475D4000AE3ED /* UIVCUsedInSwiftUI.swift in Sources */,
 				B3A85312243C694400D28217 /* UIImageExtension.swift in Sources */,
 				B348CEBB241BAC2D00E56B24 /* DDAnimation.swift in Sources */,
 				B348CEB4241B248C00E56B24 /* DDMultipleThread.swift in Sources */,
+				B3CAB4DB24447B62000AE3ED /* UIViewUsedInSwiftUI.swift in Sources */,
 				B348CEBF241BB19600E56B24 /* DDEmojiEmitterView.swift in Sources */,
 				B3A85321243C78D200D28217 /* DDCollectionViewCell.swift in Sources */,
 				B348CEBD241BAE6B00E56B24 /* DDGoldCupAnimator.swift in Sources */,
@@ -751,6 +770,7 @@
 				B3437DB72410B5A2004971E1 /* SortFunction.swift in Sources */,
 				B392E328241FD488005299EE /* DDAnnotation.m in Sources */,
 				B3B539BE240A575A005163CE /* CoreDataManager.swift in Sources */,
+				B3CAB4D7244474FC000AE3ED /* InteractionWithUIKit.swift in Sources */,
 				B3A85327243C78D200D28217 /* DDViewController.swift in Sources */,
 				B3CBC70F241E235200533300 /* UIView+AutoLayout.m in Sources */,
 				B3B539A8240A56E9005163CE /* SceneDelegate.swift in Sources */,
