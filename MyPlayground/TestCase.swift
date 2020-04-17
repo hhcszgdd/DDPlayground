@@ -20,6 +20,7 @@ enum DDAction: String , CaseIterable {
     case selWithString
     case emitterView
     case swiftUI
+    case allKindOfAlert
 }
 
 extension ViewController {
@@ -48,12 +49,18 @@ extension ViewController {
             testEmitterView()
         case .swiftUI:
             testSwiftUI()
+        case .allKindOfAlert:
+            testAllKindOfAlert()
         }
     }
     
 }
 import SwiftUI
 extension ViewController {
+    func testAllKindOfAlert() {
+        let vc = AllKindOfAlert()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
     func testSwiftUI() {
         if #available(iOS 13.0, *) {
             let vc = UIHostingController(rootView: ContentView())

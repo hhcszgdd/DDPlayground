@@ -90,6 +90,7 @@
 		B3CAB4DB24447B62000AE3ED /* UIViewUsedInSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CAB4DA24447B62000AE3ED /* UIViewUsedInSwiftUI.swift */; };
 		B3CBC70F241E235200533300 /* UIView+AutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B3CBC70E241E235200533300 /* UIView+AutoLayout.m */; };
 		B3CBC712241E2E2C00533300 /* DDSingleInstance.m in Sources */ = {isa = PBXBuildFile; fileRef = B3CBC711241E2E2C00533300 /* DDSingleInstance.m */; };
+		B3FE1505244946530095C7B9 /* AllKindOfAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FE1504244946530095C7B9 /* AllKindOfAlert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -211,6 +212,7 @@
 		B3CBC70E241E235200533300 /* UIView+AutoLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+AutoLayout.m"; sourceTree = "<group>"; };
 		B3CBC710241E2E2C00533300 /* DDSingleInstance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDSingleInstance.h; sourceTree = "<group>"; };
 		B3CBC711241E2E2C00533300 /* DDSingleInstance.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDSingleInstance.m; sourceTree = "<group>"; };
+		B3FE1504244946530095C7B9 /* AllKindOfAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllKindOfAlert.swift; sourceTree = "<group>"; };
 		CC1D198F575D10C70115FD88 /* Pods_MyPlayground.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyPlayground.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D03A255FEC5623E5842F0D2E /* Pods-DDFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDFramework.release.xcconfig"; path = "Target Support Files/Pods-DDFramework/Pods-DDFramework.release.xcconfig"; sourceTree = "<group>"; };
 		D2F04EB6D09CB76B5FF8B8E2 /* Pods_DDFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DDFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -396,6 +398,7 @@
 			isa = PBXGroup;
 			children = (
 				B3A85311243C694300D28217 /* UIImageExtension.swift */,
+				B3FE1504244946530095C7B9 /* AllKindOfAlert.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -745,6 +748,7 @@
 				B392E32A241FD488005299EE /* DDMapViewController.swift in Sources */,
 				B3CAB4D9244475D4000AE3ED /* UIVCUsedInSwiftUI.swift in Sources */,
 				B3A85312243C694400D28217 /* UIImageExtension.swift in Sources */,
+				B3FE1505244946530095C7B9 /* AllKindOfAlert.swift in Sources */,
 				B348CEBB241BAC2D00E56B24 /* DDAnimation.swift in Sources */,
 				B348CEB4241B248C00E56B24 /* DDMultipleThread.swift in Sources */,
 				B3CAB4DB24447B62000AE3ED /* UIViewUsedInSwiftUI.swift in Sources */,
