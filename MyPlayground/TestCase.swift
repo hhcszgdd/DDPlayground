@@ -21,6 +21,8 @@ enum DDAction: String , CaseIterable {
     case emitterView
     case swiftUI
     case allKindOfAlert
+    case swiftKeyPath
+    case SwiftDynamicCallable
 }
 
 extension ViewController {
@@ -51,12 +53,24 @@ extension ViewController {
             testSwiftUI()
         case .allKindOfAlert:
             testAllKindOfAlert()
+        case .swiftKeyPath:
+            testSwiftKeyPath()
+        case .SwiftDynamicCallable:
+            testSwiftDynamicCallable()
         }
     }
     
 }
 import SwiftUI
 extension ViewController {
+    func testSwiftDynamicCallable()  {
+        SwiftDynamicCallableCase.share.test()
+    }
+    func testSwiftKeyPath() {
+//        SwiftKeyPathCase.share.changeNameOfPersonByKeyPath(newName:"John Connor")
+        SwiftKeyPathCase.share.changeAgeOfPersonByKeyPath(newAge:1)
+    }
+    
     func testAllKindOfAlert() {
         let vc = AllKindOfAlert()
         self.navigationController?.pushViewController(vc, animated: true)

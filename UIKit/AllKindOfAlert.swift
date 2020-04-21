@@ -56,9 +56,29 @@ class AllKindOfAlert: DDViewController {
         alert()
         
     }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        var view = UIApplication.shared.windows[0].subviews.first;
+        var level = UIWindow.Level.normal
+//        for w in UIApplication.shared.windows {
+//
+//            if w.windowLevel > level {
+//                level = w.windowLevel
+//                 view = w.subviews.first;
+//            }
+//        }
+//        UIApplication.shared.windows.first?.windowLevel = .
+        var responder : UIResponder? = view
+        while responder != nil {
+            print("\(responder)")
+            responder = responder?.next
+        }
+    }
     func alert() {
         let alert = UIAlertController(title: "title", message: "message ", preferredStyle: UIAlertController.Style.alert)
         let action = UIAlertAction(title: "action1", style: UIAlertAction.Style.default) { (action ) in
+
+            
         }
         let action2 = UIAlertAction(title: "action and action", style: UIAlertAction.Style.default) { (action ) in
             self.alert()
@@ -116,3 +136,85 @@ extension AllKindOfAlert: UIContextMenuInteractionDelegate {
     
     
 }
+/*
+ allKindOfAlert
+ (lldb) po UIApplication.shared.windows[0]
+ <UIWindow: 0x101d091b0; frame = (0 0; 375 667); hidden = YES; gestureRecognizers = <NSArray: 0x2804f2b20>; layer = <UIWindowLayer: 0x280a93a80>>
+
+ (lldb) po UIApplication.shared.windows[0].subviews
+ 0 elements
+
+ (lldb) po UIApplication.shared.windows[0].windowScene
+ ▿ Optional<UIWindowScene>
+   - some : <UIWindowScene: 0x101d02410; scene = <FBSSceneImpl: 0x28249a980; identifier: sceneID:hhcszgd.MyPlayground.com-default>; persistentIdentifier = 014BCF74-E0EB-4E7B-9C4E-080B8BBD3B63; activationState = UISceneActivationStateForegroundActive; settingsCanvas = <UIWindowScene: 0x101d02410>; windows = (
+     "<UIWindow: 0x101d091b0; frame = (0 0; 375 667); hidden = YES; gestureRecognizers = <NSArray: 0x2804f2b20>; layer = <UIWindowLayer: 0x280a93a80>>",
+     "<MyPlayground.DDWindow: 0x101c13e50; baseClass = UIWindow; frame = (0 0; 375 667); gestureRecognizers = <NSArray: 0x2804c7db0>; layer = <UIWindowLayer: 0x280abc0a0>>",
+     "<UITextEffectsWindow: 0x10559fda0; frame = (0 0; 375 667); opaque = NO; autoresize = W+H; layer = <UIWindowLayer: 0x280ab4440>>"
+ )>
+
+ (lldb) po UIApplication.shared.windows[0].windowScene?.windows
+ ▿ Optional<Array<UIWindow>>
+   ▿ some : 3 elements
+     - 0 : <UIWindow: 0x101d091b0; frame = (0 0; 375 667); hidden = YES; gestureRecognizers = <NSArray: 0x2804f2b20>; layer = <UIWindowLayer: 0x280a93a80>>
+     - 1 : <MyPlayground.DDWindow: 0x101c13e50; baseClass = UIWindow; frame = (0 0; 375 667); gestureRecognizers = <NSArray: 0x2804c7db0>; layer = <UIWindowLayer: 0x280abc0a0>>
+     - 2 : <UITextEffectsWindow: 0x10559fda0; frame = (0 0; 375 667); opaque = NO; autoresize = W+H; layer = <UIWindowLayer: 0x280ab4440>>
+
+ (lldb) po UIApplication.shared.windows[0].windowScene?.windows[0].subviews
+ ▿ Optional<Array<UIView>>
+   - some : 0 elements
+
+ (lldb)  po UIApplication.shared.windows
+ ▿ 3 elements
+   - 0 : <UIWindow: 0x101d091b0; frame = (0 0; 375 667); hidden = YES; gestureRecognizers = <NSArray: 0x2804f2b20>; layer = <UIWindowLayer: 0x280a93a80>>
+   - 1 : <MyPlayground.DDWindow: 0x101c13e50; baseClass = UIWindow; frame = (0 0; 375 667); gestureRecognizers = <NSArray: 0x2804c7db0>; layer = <UIWindowLayer: 0x280abc0a0>>
+   - 2 : <UITextEffectsWindow: 0x10559fda0; frame = (0 0; 375 667); opaque = NO; autoresize = W+H; layer = <UIWindowLayer: 0x280ab4440>>
+
+ (lldb)  po UIApplication.shared.windows[1]
+ <MyPlayground.DDWindow: 0x101c13e50; baseClass = UIWindow; frame = (0 0; 375 667); gestureRecognizers = <NSArray: 0x2804c7db0>; layer = <UIWindowLayer: 0x280abc0a0>>
+
+ (lldb)  po UIApplication.shared.windows[1].subviews
+ ▿ 1 element
+   - 0 : <UITransitionView: 0x101c17090; frame = (0 0; 375 667); autoresize = W+H; layer = <CALayer: 0x280abe9e0>>
+
+ (lldb)  po UIApplication.shared.windows[1].subviews.first?.subviews
+ ▿ Optional<Array<UIView>>
+   ▿ some : 1 element
+     - 0 : <UIDropShadowView: 0x101c17d00; frame = (0 0; 375 667); clipsToBounds = YES; autoresize = W+H; layer = <CALayer: 0x280abc3c0>>
+
+ (lldb)  po UIApplication.shared.windows[1].subviews.first?.subviews.first?.subviews
+ ▿ Optional<Array<UIView>>
+   ▿ some : 1 element
+     - 0 : <UILayoutContainerView: 0x101c149a0; frame = (0 0; 375 667); clipsToBounds = YES; autoresize = W+H; gestureRecognizers = <NSArray: 0x2804c76f0>; layer = <CALayer: 0x280abc1a0>>
+
+ (lldb)  po UIApplication.shared.windows[1].subviews.first?.subviews.first?.subviews.first?.subviews
+ ▿ Optional<Array<UIView>>
+   ▿ some : 2 elements
+     - 0 : <UINavigationTransitionView: 0x101c160b0; frame = (0 0; 375 667); clipsToBounds = YES; autoresize = W+H; layer = <CALayer: 0x280abc160>>
+     - 1 : <UINavigationBar: 0x101c14d20; frame = (0 20; 375 44); opaque = NO; autoresize = W; userInteractionEnabled = NO; tintColor = UIExtendedGrayColorSpace 1 1; layer = <CALayer: 0x280abc120>>
+
+ (lldb)  po UIApplication.shared.windows[1].subviews.first?.subviews.first?.subviews.first?.subviews.first?.subviews
+ ▿ Optional<Array<UIView>>
+   ▿ some : 1 element
+     - 0 : <UIViewControllerWrapperView: 0x105578950; frame = (0 0; 375 667); autoresize = W+H; layer = <CALayer: 0x280a86f00>>
+
+ (lldb)  po UIApplication.shared.windows[1].subviews.first?.subviews.first?.subviews.first?.subviews.first?.subviews.first?.subviews
+ ▿ Optional<Array<UIView>>
+   ▿ some : 1 element
+     - 0 : <UIView: 0x101d011a0; frame = (0 0; 375 667); autoresize = W+H; layer = <CALayer: 0x280a919a0>>
+
+ (lldb)  po UIApplication.shared.windows[1].subviews.first?.subviews.first?.subviews.first?.subviews.first?.subviews.first?.subviews.first?.next
+ ▿ Optional<UIResponder>
+   ▿ some : <MyPlayground.AllKindOfAlert: 0x101d0dcb0>
+ 
+ 
+ (lldb)  po UIApplication.shared.windows[1].isHidden
+ false
+
+ (lldb)  po UIApplication.shared.windows[0].isHidden
+ true
+
+ (lldb)  po UIApplication.shared.windows[2].isHidden
+ false
+ 
+ 结论:iOS13 想要获取当前显示的window中appDelegat中设置的那个window, 不能用keyWindow来获取 , 也不能用windowLevel来获取, 也不能用下标为0来获取 , 只能自定义一个CustomWindow, 再遍历UIApplication.shared.windows 对比类是否为CustomWindow 的方式,
+ */
