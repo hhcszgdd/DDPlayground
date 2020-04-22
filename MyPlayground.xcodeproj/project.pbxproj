@@ -61,6 +61,9 @@
 		B34EACAE244E8AC300D8FD8D /* SwiftKeyPathCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34EACAD244E8AC300D8FD8D /* SwiftKeyPathCase.swift */; };
 		B34EACB0244E8D9000D8FD8D /* SingleInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34EACAF244E8D9000D8FD8D /* SingleInstance.swift */; };
 		B34EACB2244F059200D8FD8D /* SwiftDynamicCallableCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34EACB1244F059200D8FD8D /* SwiftDynamicCallableCase.swift */; };
+		B34EACB42450173600D8FD8D /* SwiftAssociatedTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34EACB32450173600D8FD8D /* SwiftAssociatedTypes.swift */; };
+		B34EACB624501EBB00D8FD8D /* SwiftProtocolCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34EACB524501EBB00D8FD8D /* SwiftProtocolCase.swift */; };
+		B34EACB8245020E200D8FD8D /* SwiftOperatorSymbolCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34EACB7245020E200D8FD8D /* SwiftOperatorSymbolCase.swift */; };
 		B36C2932240A5A38003B57E1 /* GradientManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36C2931240A5A38003B57E1 /* GradientManager.swift */; };
 		B392E328241FD488005299EE /* DDAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = B392E323241FD488005299EE /* DDAnnotation.m */; };
 		B392E329241FD488005299EE /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B392E324241FD488005299EE /* MapViewController.m */; };
@@ -190,6 +193,9 @@
 		B34EACAD244E8AC300D8FD8D /* SwiftKeyPathCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftKeyPathCase.swift; sourceTree = "<group>"; };
 		B34EACAF244E8D9000D8FD8D /* SingleInstance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleInstance.swift; sourceTree = "<group>"; };
 		B34EACB1244F059200D8FD8D /* SwiftDynamicCallableCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDynamicCallableCase.swift; sourceTree = "<group>"; };
+		B34EACB32450173600D8FD8D /* SwiftAssociatedTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftAssociatedTypes.swift; sourceTree = "<group>"; };
+		B34EACB524501EBB00D8FD8D /* SwiftProtocolCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftProtocolCase.swift; sourceTree = "<group>"; };
+		B34EACB7245020E200D8FD8D /* SwiftOperatorSymbolCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftOperatorSymbolCase.swift; sourceTree = "<group>"; };
 		B36C2931240A5A38003B57E1 /* GradientManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientManager.swift; sourceTree = "<group>"; };
 		B36C2945240A5D2B003B57E1 /* DDFunctionClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDFunctionClass.swift; sourceTree = "<group>"; };
 		B392E323241FD488005299EE /* DDAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDAnnotation.m; sourceTree = "<group>"; };
@@ -391,6 +397,9 @@
 				B34EACAB244E8A6800D8FD8D /* Swift52.swift */,
 				B34EACAD244E8AC300D8FD8D /* SwiftKeyPathCase.swift */,
 				B34EACB1244F059200D8FD8D /* SwiftDynamicCallableCase.swift */,
+				B34EACB32450173600D8FD8D /* SwiftAssociatedTypes.swift */,
+				B34EACB524501EBB00D8FD8D /* SwiftProtocolCase.swift */,
+				B34EACB7245020E200D8FD8D /* SwiftOperatorSymbolCase.swift */,
 			);
 			path = SwiftSyntax;
 			sourceTree = "<group>";
@@ -770,6 +779,7 @@
 				B3B539B0240A56E9005163CE /* MyPlayground.xcdatamodeld in Sources */,
 				B392E32A241FD488005299EE /* DDMapViewController.swift in Sources */,
 				B3CAB4D9244475D4000AE3ED /* UIVCUsedInSwiftUI.swift in Sources */,
+				B34EACB8245020E200D8FD8D /* SwiftOperatorSymbolCase.swift in Sources */,
 				B3A85312243C694400D28217 /* UIImageExtension.swift in Sources */,
 				B3FE1505244946530095C7B9 /* AllKindOfAlert.swift in Sources */,
 				B348CEBB241BAC2D00E56B24 /* DDAnimation.swift in Sources */,
@@ -780,6 +790,7 @@
 				B3A85321243C78D200D28217 /* DDCollectionViewCell.swift in Sources */,
 				B348CEBD241BAE6B00E56B24 /* DDGoldCupAnimator.swift in Sources */,
 				B344F4412418872B000583C9 /* SwitcherView.swift in Sources */,
+				B34EACB42450173600D8FD8D /* SwiftAssociatedTypes.swift in Sources */,
 				B392E329241FD488005299EE /* MapViewController.m in Sources */,
 				B36C2932240A5A38003B57E1 /* GradientManager.swift in Sources */,
 				B3A85324243C78D200D28217 /* DDRow2.swift in Sources */,
@@ -789,6 +800,7 @@
 				B3CAB4D024445391000AE3ED /* DDGameDemoVC.swift in Sources */,
 				B3CAB4D424446EB9000AE3ED /* TestCase.swift in Sources */,
 				B3A85322243C78D200D28217 /* DDRow.swift in Sources */,
+				B34EACB624501EBB00D8FD8D /* SwiftProtocolCase.swift in Sources */,
 				B34EACAC244E8A6800D8FD8D /* Swift52.swift in Sources */,
 				B34EACB2244F059200D8FD8D /* SwiftDynamicCallableCase.swift in Sources */,
 				B3A85328243C78D200D28217 /* DDCollectionViewController.swift in Sources */,
