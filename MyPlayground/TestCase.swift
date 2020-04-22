@@ -23,6 +23,9 @@ enum DDAction: String , CaseIterable {
     case allKindOfAlert
     case swiftKeyPath
     case SwiftDynamicCallable
+    case SafariVC
+    case shapeLayer
+    case cupAnimatin
 }
 
 extension ViewController {
@@ -32,23 +35,24 @@ extension ViewController {
         case .layout:
             testAutolayout()
         case .rxSwift:
-            testRXSwift()
+            navigationController?.pushViewController(DDRxViewController(), animated: true)
         case .scene:
             testGameDemoVC()
         case .ddCollection:
             testDDCollectionVC()
         case .quickSort:
-            testQuickSort()
+            SortFunction.share.test()
         case .curvedView:
             testCurvedView()
         case .mutipleThread:
-            testMutipleThread()
+            DDMultipleThread.share.testGCDAsync()
         case .coreData:
-            testCoreData()
+            CoreDataManager.share.testSaveData()
+            CoreDataManager.share.testReadData()
         case .selWithString:
-            performFunctionWithString()
+            self.view.perform(NSSelectorFromString("layoutIfNeeded"), with: nil, with: nil)
         case .emitterView:
-            testEmitterView()
+            self.emitterView.startAnimation()
         case .swiftUI:
             testSwiftUI()
         case .allKindOfAlert:
@@ -57,99 +61,13 @@ extension ViewController {
             testSwiftKeyPath()
         case .SwiftDynamicCallable:
             testSwiftDynamicCallable()
+        case .SafariVC:
+            showWebVC()
+        case .shapeLayer:
+            testShapeLayer()
+        case .cupAnimatin:
+            DDGoldCupAnimator.show(on: view)
         }
     }
-    
-}
-import SwiftUI
-extension ViewController {
-    func testSwiftDynamicCallable()  {
-        SwiftDynamicCallableCase.share.test()
-    }
-    func testSwiftKeyPath() {
-//        SwiftKeyPathCase.share.changeNameOfPersonByKeyPath(newName:"John Connor")
-        SwiftKeyPathCase.share.changeAgeOfPersonByKeyPath(newAge:1)
-    }
-    
-    func testAllKindOfAlert() {
-        let vc = AllKindOfAlert()
-        self.navigationController?.pushViewController(vc, animated: true)
-    }
-    func testSwiftUI() {
-        if #available(iOS 13.0, *) {
-            let vc = UIHostingController(rootView: ContentView())
-                // ios 13下设置导航栏背景色
-            vc.setupNavigationBarAppearance(style:.blue)
-            self.navigationController?.pushViewController(vc, animated: true)
-        }
-    }
-    
-    func testGameDemoVC() {
-        let vc = DDGameDemoVC()
-        navigationController?.pushViewController(vc, animated: true)
-    }
-    
-    func testDDCollectionVC() {
-        let vc = DDCollectionViewController()
-        vc.collectionView.sections = [
-            DDSection(rows: [  DDRow5(), DDRow(), DDRow1(), DDRow2(), DDRow3() , DDRow4()  ])
-        ]
-        navigationController?.pushViewController(vc, animated: true)
-    }
-    
-    func testRXSwift() {
-        let vc = DDRxViewController()
-        
-        navigationController?.pushViewController(vc, animated: true)
-    }
-    
-    func testCupAnamation() {
-        DDGoldCupAnimator.show(on: view)
-    }
-    
-    func testAutolayout() {
-        let ss = UIView()
-        ss.setWidth(200)
-        ss.setHeight(200)
-        ss.backgroundColor = .blue
-        view.add(subview: ss, pin: [.top, .left], margin: DDMargins(top: 200, left: 100))
-    }
-    func performFunctionWithString() {
-        self.perform(NSSelectorFromString("testShapLayer"), with: nil, with: nil)
-    }
-    
-    
-    @objc func testShapLayer() {
-        DDShapeLayerManager.share.testWithView(parentView: view)
-    }
-    
-    func testCoreData() {
-        CoreDataManager.share.testSaveData()
-        CoreDataManager.share.testReadData()
-    }
-    
-    func testCurvedView() {
-        let curved = CurvedView(frame: CGRect(x: 100, y: 300, width: 222, height: 222), conners: [ .topLeft, .bottomRight ])
-        curved.backgroundColor = .cyan
-        view.addSubview(curved)
-        
-        //        GradientManager.share.testWithView(parentView: view)
-        
-        //        view.addSubview( SwitcherView( frame: UIScreen.main.bounds ) )
-        
-    }
-    
-    func testQuickSort() {
-        SortFunction.share.test()
-    }
-    
-    func testMutipleThread() {
-        DDMultipleThread.share.testGCDAsync()
-    }
-    
-    func testEmitterView()   {
-        self.emitterView.startAnimation()
-    }
-    
     
 }

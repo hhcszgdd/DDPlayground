@@ -136,6 +136,13 @@ extension AllKindOfAlert: UIContextMenuInteractionDelegate {
     
     
 }
+
+extension DDViewController {
+    func testAllKindOfAlert() {
+        let vc = AllKindOfAlert()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+}
 /*
  allKindOfAlert
  (lldb) po UIApplication.shared.windows[0]

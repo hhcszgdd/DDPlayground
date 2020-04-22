@@ -128,3 +128,18 @@ extension String {
         return image
     }
 }
+
+
+extension DDViewController {
+    
+    func testAutolayout() {
+        let ss = UIView()
+        ss.setWidth(200)
+        ss.setHeight(200)
+        ss.backgroundColor = .blue
+        view.add(subview: ss, pin: [.top, .left], margin: DDMargins(top: 200, left: 100))
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 3) {
+            ss.removeFromSuperview()
+        }
+    }
+}

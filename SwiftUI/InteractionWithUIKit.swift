@@ -26,3 +26,15 @@ struct InteractionWithUIKit_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+extension DDViewController {
+    func testSwiftUI() {
+        if #available(iOS 13.0, *) {
+            let vc = UIHostingController(rootView: ContentView())
+                // ios 13下设置导航栏背景色
+            vc.setupNavigationBarAppearance(style:.blue)
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+    }
+    
+}

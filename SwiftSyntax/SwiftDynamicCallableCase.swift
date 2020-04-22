@@ -154,3 +154,9 @@ class DDTeacher  {
         print(dictArr)
     }
 }
+
+extension DDViewController {
+    func testSwiftDynamicCallable()  {
+        SwiftDynamicCallableCase.share.test()
+    }
+}

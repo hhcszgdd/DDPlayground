@@ -45,7 +45,7 @@ extension ViewController : UITableViewDelegate, UITableViewDataSource {
         }else {
             cell = UITableViewCell(style: UITableViewCell.CellStyle.subtitle, reuseIdentifier: "DDCell")
         }
-        cell.textLabel?.text = "will be perform action : \(DDAction.allCases[indexPath.row].rawValue)"
+        cell.textLabel?.text = DDAction.allCases[indexPath.row].rawValue
         return cell
     }
     

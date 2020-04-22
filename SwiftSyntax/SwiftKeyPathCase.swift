@@ -63,3 +63,12 @@ func setter<Object: AnyObject, Value>( for object: Object,  keyPath: ReferenceWr
         object?[keyPath: keyPath] = value
     }
 }
+
+
+extension DDViewController {
+    func testSwiftKeyPath() {
+        //        SwiftKeyPathCase.share.changeNameOfPersonByKeyPath(newName:"John Connor")
+        SwiftKeyPathCase.share.changeAgeOfPersonByKeyPath(newAge:1)
+    }
+    
+}

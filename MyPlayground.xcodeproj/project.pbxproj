@@ -64,6 +64,8 @@
 		B34EACB42450173600D8FD8D /* SwiftAssociatedTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34EACB32450173600D8FD8D /* SwiftAssociatedTypes.swift */; };
 		B34EACB624501EBB00D8FD8D /* SwiftProtocolCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34EACB524501EBB00D8FD8D /* SwiftProtocolCase.swift */; };
 		B34EACB8245020E200D8FD8D /* SwiftOperatorSymbolCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34EACB7245020E200D8FD8D /* SwiftOperatorSymbolCase.swift */; };
+		B34EACBA24502BE900D8FD8D /* WebVCCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34EACB924502BE900D8FD8D /* WebVCCase.swift */; };
+		B34EACBC2450394500D8FD8D /* DDTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34EACBB2450394500D8FD8D /* DDTimer.swift */; };
 		B36C2932240A5A38003B57E1 /* GradientManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36C2931240A5A38003B57E1 /* GradientManager.swift */; };
 		B392E328241FD488005299EE /* DDAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = B392E323241FD488005299EE /* DDAnnotation.m */; };
 		B392E329241FD488005299EE /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B392E324241FD488005299EE /* MapViewController.m */; };
@@ -196,6 +198,8 @@
 		B34EACB32450173600D8FD8D /* SwiftAssociatedTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftAssociatedTypes.swift; sourceTree = "<group>"; };
 		B34EACB524501EBB00D8FD8D /* SwiftProtocolCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftProtocolCase.swift; sourceTree = "<group>"; };
 		B34EACB7245020E200D8FD8D /* SwiftOperatorSymbolCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftOperatorSymbolCase.swift; sourceTree = "<group>"; };
+		B34EACB924502BE900D8FD8D /* WebVCCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebVCCase.swift; sourceTree = "<group>"; };
+		B34EACBB2450394500D8FD8D /* DDTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDTimer.swift; sourceTree = "<group>"; };
 		B36C2931240A5A38003B57E1 /* GradientManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientManager.swift; sourceTree = "<group>"; };
 		B36C2945240A5D2B003B57E1 /* DDFunctionClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDFunctionClass.swift; sourceTree = "<group>"; };
 		B392E323241FD488005299EE /* DDAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDAnnotation.m; sourceTree = "<group>"; };
@@ -428,7 +432,9 @@
 			isa = PBXGroup;
 			children = (
 				B3A85311243C694300D28217 /* UIImageExtension.swift */,
+				B34EACB924502BE900D8FD8D /* WebVCCase.swift */,
 				B3FE1504244946530095C7B9 /* AllKindOfAlert.swift */,
+				B34EACBB2450394500D8FD8D /* DDTimer.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -789,6 +795,7 @@
 				B348CEBF241BB19600E56B24 /* DDEmojiEmitterView.swift in Sources */,
 				B3A85321243C78D200D28217 /* DDCollectionViewCell.swift in Sources */,
 				B348CEBD241BAE6B00E56B24 /* DDGoldCupAnimator.swift in Sources */,
+				B34EACBA24502BE900D8FD8D /* WebVCCase.swift in Sources */,
 				B344F4412418872B000583C9 /* SwitcherView.swift in Sources */,
 				B34EACB42450173600D8FD8D /* SwiftAssociatedTypes.swift in Sources */,
 				B392E329241FD488005299EE /* MapViewController.m in Sources */,
@@ -819,6 +826,7 @@
 				B3CBC70F241E235200533300 /* UIView+AutoLayout.m in Sources */,
 				B3B539A8240A56E9005163CE /* SceneDelegate.swift in Sources */,
 				B3B539C3240A5811005163CE /* Model1+CoreDataProperties.swift in Sources */,
+				B34EACBC2450394500D8FD8D /* DDTimer.swift in Sources */,
 				B3A8531F243C78CC00D28217 /* DDFunctionClass.swift in Sources */,
 				B344F4402418872B000583C9 /* ContainerView.swift in Sources */,
 				B3B539C2240A5811005163CE /* Model1+CoreDataClass.swift in Sources */,

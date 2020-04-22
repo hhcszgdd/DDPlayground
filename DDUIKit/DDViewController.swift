@@ -30,6 +30,7 @@ open class DDViewController: UIViewController {
     
     override open func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .orange
         setBackButton()
         
     }

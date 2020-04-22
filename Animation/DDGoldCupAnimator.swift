@@ -11,7 +11,7 @@ final class DDGoldCupAnimator {
             cupView.layer.removeAllAnimations()
             cupView.removeFromSuperview()
         })
-        cupView.layer.add(CupViewAnimatation(point:CGPoint(x: view.bounds.width / 2, y: view.bounds.height + 8)), forKey: nil)
+        cupView.layer.add(CupViewAnimatation(point:CGPoint(x: view.bounds.width / 2, y: view.bounds.height/2)), forKey: nil)
         CATransaction.commit()
     }
 }

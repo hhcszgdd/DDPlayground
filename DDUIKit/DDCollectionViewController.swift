@@ -70,3 +70,12 @@ extension DDCollectionViewController: UICollectionViewDataSource, UICollectionVi
     
 }
 
+extension DDViewController {
+    func testDDCollectionVC() {
+        let vc = DDCollectionViewController()
+        vc.collectionView.sections = [
+            DDSection(rows: [  DDRow5(), DDRow(), DDRow1(), DDRow2(), DDRow3() , DDRow4()  ])
+        ]
+        navigationController?.pushViewController(vc, animated: true)
+    }
+}

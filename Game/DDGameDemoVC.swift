@@ -121,3 +121,12 @@ class DDGameDemoVC: DDViewController {
     }
     
 }
+
+extension DDViewController {
+    
+    func testGameDemoVC() {
+        let vc = DDGameDemoVC()
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+}
