@@ -63,7 +63,7 @@
 }
 
 
-/// Mark: drawEclipse
+//MARK: drawEclipse
     
 - (void)drawEclipse{
     const NSArray * result = [self computeExtentPositions:self.center minorRadius:80 majorRadius:40 heading:0];
@@ -141,7 +141,7 @@
 
 
 
-/// Mark: delegate
+// MARK: delegate
 - (MKOverlayRenderer *)mapView:(MKMapView *)mapView rendererForOverlay:(id<MKOverlay>)overlay {
     if ([overlay isKindOfClass: [MKPolyline class]]) {
         MKPolylineRenderer * overlayBeRender =  [[MKPolylineRenderer alloc] initWithOverlay:overlay];

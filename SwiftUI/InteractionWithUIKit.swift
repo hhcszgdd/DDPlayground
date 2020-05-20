@@ -6,6 +6,8 @@
 //  Copyright © 2020 JohnConnor. All rights reserved.
 //
 
+//MARK: warning , you must choose ios13 deveice or simulator , or you will get compile error
+
 import SwiftUI
 
 @available(iOS 13.0, *)

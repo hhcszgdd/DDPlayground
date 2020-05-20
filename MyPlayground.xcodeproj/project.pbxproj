@@ -3,12 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		3E5B2F6B76CD6F60AA76F67E /* Pods_MyPlayground.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC1D198F575D10C70115FD88 /* Pods_MyPlayground.framework */; };
 		6B42684241871787F4D8847B /* Pods_MyPlaygroundUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C7687876A0257876CD96A36 /* Pods_MyPlaygroundUITests.framework */; };
+		B313ABAC24753D2800E44FAE /* DDPDFViewerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B313ABAB24753D2800E44FAE /* DDPDFViewerVC.swift */; };
+		B338052B24585461000B2262 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = B338052824585461000B2262 /* GCDAsyncSocket.m */; };
+		B338052C24585461000B2262 /* MBWebSocketServer.m in Sources */ = {isa = PBXBuildFile; fileRef = B338052A24585461000B2262 /* MBWebSocketServer.m */; };
 		B3437DB72410B5A2004971E1 /* SortFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3437DB62410B5A2004971E1 /* SortFunction.swift */; };
 		B3437DE024127E40004971E1 /* MyPlaygroundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3437DDF24127E40004971E1 /* MyPlaygroundUITests.swift */; };
 		B344F4402418872B000583C9 /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B344F43E2418872A000583C9 /* ContainerView.swift */; };
@@ -66,6 +69,7 @@
 		B34EACB8245020E200D8FD8D /* SwiftOperatorSymbolCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34EACB7245020E200D8FD8D /* SwiftOperatorSymbolCase.swift */; };
 		B34EACBA24502BE900D8FD8D /* WebVCCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34EACB924502BE900D8FD8D /* WebVCCase.swift */; };
 		B34EACBC2450394500D8FD8D /* DDTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34EACBB2450394500D8FD8D /* DDTimer.swift */; };
+		B35CD1DF245845430020909B /* WebSocketCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35CD1DE245845430020909B /* WebSocketCase.swift */; };
 		B36C2932240A5A38003B57E1 /* GradientManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36C2931240A5A38003B57E1 /* GradientManager.swift */; };
 		B392E328241FD488005299EE /* DDAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = B392E323241FD488005299EE /* DDAnnotation.m */; };
 		B392E329241FD488005299EE /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B392E324241FD488005299EE /* MapViewController.m */; };
@@ -82,6 +86,9 @@
 		B3A85326243C78D200D28217 /* DDSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3437DCF2410B68C004971E1 /* DDSection.swift */; };
 		B3A85327243C78D200D28217 /* DDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3437DD02410B68C004971E1 /* DDViewController.swift */; };
 		B3A85328243C78D200D28217 /* DDCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B348107F2414911D00C041FB /* DDCollectionViewController.swift */; };
+		B3B0A857246A8F0500FCDE92 /* pokemon-25.json in Resources */ = {isa = PBXBuildFile; fileRef = B3B0A856246A8F0500FCDE92 /* pokemon-25.json */; };
+		B3B0A859246A903600FCDE92 /* DDFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B0A858246A903600FCDE92 /* DDFileManager.swift */; };
+		B3B0A85C246AAB4B00FCDE92 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = B3B0A85B246AAB4B00FCDE92 /* SDWebImageSwiftUI */; };
 		B3B539A6240A56E9005163CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B539A5240A56E9005163CE /* AppDelegate.swift */; };
 		B3B539A8240A56E9005163CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B539A7240A56E9005163CE /* SceneDelegate.swift */; };
 		B3B539AA240A56E9005163CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B539A9240A56E9005163CE /* ViewController.swift */; };
@@ -132,6 +139,11 @@
 		571248CAAE0270E3F8EE4D59 /* Pods-MyPlayground.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyPlayground.release.xcconfig"; path = "Target Support Files/Pods-MyPlayground/Pods-MyPlayground.release.xcconfig"; sourceTree = "<group>"; };
 		6CB5AB4C6BF6567585821050 /* Pods-DDUIKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDUIKit.release.xcconfig"; path = "Target Support Files/Pods-DDUIKit/Pods-DDUIKit.release.xcconfig"; sourceTree = "<group>"; };
 		ACF22C139949AA419D3B9269 /* Pods_DDUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DDUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B313ABAB24753D2800E44FAE /* DDPDFViewerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDPDFViewerVC.swift; sourceTree = "<group>"; };
+		B338052724585460000B2262 /* MBWebSocketServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBWebSocketServer.h; sourceTree = "<group>"; };
+		B338052824585461000B2262 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		B338052924585461000B2262 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		B338052A24585461000B2262 /* MBWebSocketServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBWebSocketServer.m; sourceTree = "<group>"; };
 		B3437DB62410B5A2004971E1 /* SortFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortFunction.swift; sourceTree = "<group>"; };
 		B3437DC92410B68C004971E1 /* DDRow3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDRow3.swift; sourceTree = "<group>"; };
 		B3437DCA2410B68C004971E1 /* DDCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDCollectionView.swift; sourceTree = "<group>"; };
@@ -200,6 +212,7 @@
 		B34EACB7245020E200D8FD8D /* SwiftOperatorSymbolCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftOperatorSymbolCase.swift; sourceTree = "<group>"; };
 		B34EACB924502BE900D8FD8D /* WebVCCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebVCCase.swift; sourceTree = "<group>"; };
 		B34EACBB2450394500D8FD8D /* DDTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDTimer.swift; sourceTree = "<group>"; };
+		B35CD1DE245845430020909B /* WebSocketCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketCase.swift; sourceTree = "<group>"; };
 		B36C2931240A5A38003B57E1 /* GradientManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientManager.swift; sourceTree = "<group>"; };
 		B36C2945240A5D2B003B57E1 /* DDFunctionClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDFunctionClass.swift; sourceTree = "<group>"; };
 		B392E323241FD488005299EE /* DDAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDAnnotation.m; sourceTree = "<group>"; };
@@ -209,6 +222,8 @@
 		B392E327241FD488005299EE /* DDAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDAnnotation.h; sourceTree = "<group>"; };
 		B3A85311243C694300D28217 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 		B3A85313243C6E1300D28217 /* Snip20200318_13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Snip20200318_13.png; sourceTree = "<group>"; };
+		B3B0A856246A8F0500FCDE92 /* pokemon-25.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "pokemon-25.json"; path = "MyPlayground/pokemon-25.json"; sourceTree = SOURCE_ROOT; };
+		B3B0A858246A903600FCDE92 /* DDFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDFileManager.swift; sourceTree = "<group>"; };
 		B3B539A2240A56E9005163CE /* MyPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3B539A5240A56E9005163CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3B539A7240A56E9005163CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -255,6 +270,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3B0A85C246AAB4B00FCDE92 /* SDWebImageSwiftUI in Frameworks */,
 				3E5B2F6B76CD6F60AA76F67E /* Pods_MyPlayground.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -408,6 +424,18 @@
 			path = SwiftSyntax;
 			sourceTree = "<group>";
 		};
+		B35CD1DD245845220020909B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				B338052924585461000B2262 /* GCDAsyncSocket.h */,
+				B338052824585461000B2262 /* GCDAsyncSocket.m */,
+				B338052724585460000B2262 /* MBWebSocketServer.h */,
+				B338052A24585461000B2262 /* MBWebSocketServer.m */,
+				B35CD1DE245845430020909B /* WebSocketCase.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		B36C2939240A5C96003B57E1 /* DDFramework */ = {
 			isa = PBXGroup;
 			children = (
@@ -435,6 +463,7 @@
 				B34EACB924502BE900D8FD8D /* WebVCCase.swift */,
 				B3FE1504244946530095C7B9 /* AllKindOfAlert.swift */,
 				B34EACBB2450394500D8FD8D /* DDTimer.swift */,
+				B313ABAB24753D2800E44FAE /* DDPDFViewerVC.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -442,6 +471,7 @@
 		B3B53999240A56E9005163CE = {
 			isa = PBXGroup;
 			children = (
+				B35CD1DD245845220020909B /* Network */,
 				B34EACA8244E896D00D8FD8D /* SwiftSyntax */,
 				B3CAB4D5244474CA000AE3ED /* SwiftUI */,
 				B3CAB4CE24445364000AE3ED /* Game */,
@@ -531,9 +561,11 @@
 		B3CAB4D5244474CA000AE3ED /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				B3B0A856246A8F0500FCDE92 /* pokemon-25.json */,
 				B3CAB4D6244474FC000AE3ED /* InteractionWithUIKit.swift */,
 				B3CAB4D8244475D4000AE3ED /* UIVCUsedInSwiftUI.swift */,
 				B3CAB4DA24447B62000AE3ED /* UIViewUsedInSwiftUI.swift */,
+				B3B0A858246A903600FCDE92 /* DDFileManager.swift */,
 			);
 			path = SwiftUI;
 			sourceTree = "<group>";
@@ -603,6 +635,9 @@
 			dependencies = (
 			);
 			name = MyPlayground;
+			packageProductDependencies = (
+				B3B0A85B246AAB4B00FCDE92 /* SDWebImageSwiftUI */,
+			);
 			productName = MyPlayground;
 			productReference = B3B539A2240A56E9005163CE /* MyPlayground.app */;
 			productType = "com.apple.product-type.application";
@@ -636,6 +671,9 @@
 				Base,
 			);
 			mainGroup = B3B53999240A56E9005163CE;
+			packageReferences = (
+				B3B0A85A246AAB4B00FCDE92 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = B3B539A3240A56E9005163CE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -675,6 +713,7 @@
 				B34810832414F0E500C041FB /* Colors.xcassets in Resources */,
 				B344F46B24188A8A000583C9 /* hit.mp3 in Resources */,
 				B34810982414F2E300C041FB /* card_drop.m4a in Resources */,
+				B3B0A857246A8F0500FCDE92 /* pokemon-25.json in Resources */,
 				B34810942414F2E300C041FB /* slide_left.m4a in Resources */,
 				B344F46024188A8A000583C9 /* unlockTheDoor.m4a in Resources */,
 				B344F45E24188A8A000583C9 /* Step_rock_00.mp3 in Resources */,
@@ -797,6 +836,7 @@
 				B348CEBD241BAE6B00E56B24 /* DDGoldCupAnimator.swift in Sources */,
 				B34EACBA24502BE900D8FD8D /* WebVCCase.swift in Sources */,
 				B344F4412418872B000583C9 /* SwitcherView.swift in Sources */,
+				B338052C24585461000B2262 /* MBWebSocketServer.m in Sources */,
 				B34EACB42450173600D8FD8D /* SwiftAssociatedTypes.swift in Sources */,
 				B392E329241FD488005299EE /* MapViewController.m in Sources */,
 				B36C2932240A5A38003B57E1 /* GradientManager.swift in Sources */,
@@ -809,18 +849,22 @@
 				B3A85322243C78D200D28217 /* DDRow.swift in Sources */,
 				B34EACB624501EBB00D8FD8D /* SwiftProtocolCase.swift in Sources */,
 				B34EACAC244E8A6800D8FD8D /* Swift52.swift in Sources */,
+				B35CD1DF245845430020909B /* WebSocketCase.swift in Sources */,
 				B34EACB2244F059200D8FD8D /* SwiftDynamicCallableCase.swift in Sources */,
 				B3A85328243C78D200D28217 /* DDCollectionViewController.swift in Sources */,
 				B34EACAE244E8AC300D8FD8D /* SwiftKeyPathCase.swift in Sources */,
 				B3A85325243C78D200D28217 /* DDRow3.swift in Sources */,
 				B3B539AA240A56E9005163CE /* ViewController.swift in Sources */,
 				B34EACB0244E8D9000D8FD8D /* SingleInstance.swift in Sources */,
+				B313ABAC24753D2800E44FAE /* DDPDFViewerVC.swift in Sources */,
 				B3A85326243C78D200D28217 /* DDSection.swift in Sources */,
 				B3A85323243C78D200D28217 /* DDRow1.swift in Sources */,
 				B3B539A6240A56E9005163CE /* AppDelegate.swift in Sources */,
 				B3437DB72410B5A2004971E1 /* SortFunction.swift in Sources */,
 				B392E328241FD488005299EE /* DDAnnotation.m in Sources */,
+				B338052B24585461000B2262 /* GCDAsyncSocket.m in Sources */,
 				B3B539BE240A575A005163CE /* CoreDataManager.swift in Sources */,
+				B3B0A859246A903600FCDE92 /* DDFileManager.swift in Sources */,
 				B3CAB4D7244474FC000AE3ED /* InteractionWithUIKit.swift in Sources */,
 				B3A85327243C78D200D28217 /* DDViewController.swift in Sources */,
 				B3CBC70F241E235200533300 /* UIView+AutoLayout.m in Sources */,
@@ -1096,6 +1140,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B3B0A85A246AAB4B00FCDE92 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B3B0A85B246AAB4B00FCDE92 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B3B0A85A246AAB4B00FCDE92 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		B3B539AE240A56E9005163CE /* MyPlayground.xcdatamodeld */ = {
