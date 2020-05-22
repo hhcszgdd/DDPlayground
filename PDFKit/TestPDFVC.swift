@@ -8,6 +8,10 @@
 
 import UIKit
 import PDFKit
+enum SignType {
+    case signing
+    case browsing
+}
 @available (iOS 11, *)
 class TestPDFVC: UIViewController {
     let signingPath = UIBezierPath()
@@ -15,11 +19,16 @@ class TestPDFVC: UIViewController {
     var currentAnnotation = PDFAnnotation()
     
     var annotationAdded = false
+    var signType: SignType = SignType.browsing {
+        didSet {
+            self.pdfView.isUserInteractionEnabled = signType != .signing
+        }
+    }
     lazy var pdfView: PDFView = {
         let result = PDFView(frame: view.bounds)
         result.document = self.pdfDoc
         result.autoScales = true
-         result.isUserInteractionEnabled = false
+//         result.isUserInteractionEnabled = false
 //        result.displayMode = .singlePageContinuous
         result.displayBox = PDFDisplayBox.cropBox
         return result
@@ -32,9 +41,39 @@ class TestPDFVC: UIViewController {
     }()
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.addSubview(pdfView)
-
+//        view.addSubview(pdfView)
+        view.add(subview: pdfView)
+        let sign = UIBarButtonItem(title: "浏览模式", style: UIBarButtonItem.Style.plain, target: self, action: #selector(beginSign(sender:)))
+        sign.tintColor = .red
+        let cancelSign = UIBarButtonItem(title: "重置", style: UIBarButtonItem.Style.plain, target: self, action: #selector(cancelSign(sender:)))
+        cancelSign.tintColor = .black
+        let share = UIBarButtonItem(title: "分享", style: UIBarButtonItem.Style.plain, target: self, action: #selector(shareeee))
+        share.tintColor = .green
+        navigationItem.rightBarButtonItems = [sign, cancelSign]
+        navigationItem.leftBarButtonItem =  share
         // Do any additional setup after loading the view.
+    }
+     @objc    func shareeee()  {
+        let dir = (NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true).first ?? "") + "/newFile.pdf"
+        let result = pdfView.document?.write(to: URL(fileURLWithPath: dir))
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
+            
+            do {
+                let pdfData = try Data(contentsOf: URL(fileURLWithPath: dir))
+                let vc = UIActivityViewController(activityItems: [ "here you are", URL(fileURLWithPath: dir) ], applicationActivities: nil)
+                vc.
+                vc.excludedActivityTypes = [ .print, .assignToContact, .addToReadingList, .openInIBooks ]
+                vc.completionWithItemsHandler = { activityType, _, _, _ in
+                    //            if activityType == .copyToPasteboard { UIPasteboard.general.string = User.current!.referralLink }
+                }
+                vc.excludedActivityTypes = [ .postToTencentWeibo, .markupAsPDF];
+                self.present(vc, animated: true, completion: nil)
+            } catch  {
+                print("xxxxxx: \(error)")
+            }
+
+        }
+//        let result = PDFDocument(url: path!)
     }
     
      override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -47,7 +86,16 @@ class TestPDFVC: UIViewController {
             lastPoint = pdfView.convert(position, to: pdfView.page(for: position, nearest: true)!)
         }
     }
-
+    
+    @objc func beginSign(sender:UIBarButtonItem) {
+        self.signType = self.signType == .signing ? .browsing : .signing
+        sender.title = self.signType == .signing ? "签名模式" : "浏览模式"
+    }
+    @objc func cancelSign(sender:UIBarButtonItem) {
+        self.pdfView.document?.page(at: 0)?.annotations.forEach({
+            self.pdfView.document?.page(at: 0)?.removeAnnotation($0)
+        })
+    }
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         if let touch = touches.first {
             let position = touch.location(in: pdfView)
