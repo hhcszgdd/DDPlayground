@@ -27,6 +27,7 @@ enum DDAction: String , CaseIterable {
     case shapeLayer
     case cupAnimatin
     case webSocket
+    case pdfKit
 }
 
 extension ViewController {
@@ -68,6 +69,10 @@ extension ViewController {
             testShapeLayer()
         case .cupAnimatin:
             DDGoldCupAnimator.show(on: view)
+        case .pdfKit:
+            if #available(iOS 11, *) {
+                showPDFSign()
+            }
         case .webSocket:
             if #available(iOS 13, *) {
                 WebSocketCase.share.test()

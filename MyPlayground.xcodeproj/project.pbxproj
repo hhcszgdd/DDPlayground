@@ -12,6 +12,9 @@
 		B313ABAC24753D2800E44FAE /* DDPDFViewerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B313ABAB24753D2800E44FAE /* DDPDFViewerVC.swift */; };
 		B338052B24585461000B2262 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = B338052824585461000B2262 /* GCDAsyncSocket.m */; };
 		B338052C24585461000B2262 /* MBWebSocketServer.m in Sources */ = {isa = PBXBuildFile; fileRef = B338052A24585461000B2262 /* MBWebSocketServer.m */; };
+		B342E7B824777BDD00A81154 /* UIBezierPath+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B342E7B624777BDD00A81154 /* UIBezierPath+.swift */; };
+		B342E7B924777BDD00A81154 /* TestPDFVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B342E7B724777BDD00A81154 /* TestPDFVC.swift */; };
+		B342E7BB2477831B00A81154 /* Girl.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B342E7B424777B9900A81154 /* Girl.pdf */; };
 		B3437DB72410B5A2004971E1 /* SortFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3437DB62410B5A2004971E1 /* SortFunction.swift */; };
 		B3437DE024127E40004971E1 /* MyPlaygroundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3437DDF24127E40004971E1 /* MyPlaygroundUITests.swift */; };
 		B344F4402418872B000583C9 /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B344F43E2418872A000583C9 /* ContainerView.swift */; };
@@ -144,6 +147,9 @@
 		B338052824585461000B2262 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
 		B338052924585461000B2262 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
 		B338052A24585461000B2262 /* MBWebSocketServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBWebSocketServer.m; sourceTree = "<group>"; };
+		B342E7B424777B9900A81154 /* Girl.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Girl.pdf; sourceTree = "<group>"; };
+		B342E7B624777BDD00A81154 /* UIBezierPath+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBezierPath+.swift"; sourceTree = "<group>"; };
+		B342E7B724777BDD00A81154 /* TestPDFVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestPDFVC.swift; sourceTree = "<group>"; };
 		B3437DB62410B5A2004971E1 /* SortFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortFunction.swift; sourceTree = "<group>"; };
 		B3437DC92410B68C004971E1 /* DDRow3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDRow3.swift; sourceTree = "<group>"; };
 		B3437DCA2410B68C004971E1 /* DDCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDCollectionView.swift; sourceTree = "<group>"; };
@@ -287,6 +293,15 @@
 				4C7687876A0257876CD96A36 /* Pods_MyPlaygroundUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B342E7B524777BD100A81154 /* PDFKit */ = {
+			isa = PBXGroup;
+			children = (
+				B342E7B724777BDD00A81154 /* TestPDFVC.swift */,
+				B342E7B624777BDD00A81154 /* UIBezierPath+.swift */,
+			);
+			path = PDFKit;
 			sourceTree = "<group>";
 		};
 		B3437DB52410B56C004971E1 /* Sort */ = {
@@ -471,6 +486,7 @@
 		B3B53999240A56E9005163CE = {
 			isa = PBXGroup;
 			children = (
+				B342E7B524777BD100A81154 /* PDFKit */,
 				B35CD1DD245845220020909B /* Network */,
 				B34EACA8244E896D00D8FD8D /* SwiftSyntax */,
 				B3CAB4D5244474CA000AE3ED /* SwiftUI */,
@@ -507,6 +523,7 @@
 		B3B539A4240A56E9005163CE /* MyPlayground */ = {
 			isa = PBXGroup;
 			children = (
+				B342E7B424777B9900A81154 /* Girl.pdf */,
 				B344F43D2418870B000583C9 /* CommonUI */,
 				B3B539A5240A56E9005163CE /* AppDelegate.swift */,
 				B3B539A7240A56E9005163CE /* SceneDelegate.swift */,
@@ -738,6 +755,7 @@
 				B348109A2414F2E300C041FB /* zap_lores.m4a in Resources */,
 				B34810972414F2E300C041FB /* keyboard.mp3 in Resources */,
 				B344F46724188A8A000583C9 /* Step_rock_03.mp3 in Resources */,
+				B342E7BB2477831B00A81154 /* Girl.pdf in Resources */,
 				B344F46524188A8A000583C9 /* Music_victory.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -850,6 +868,7 @@
 				B34EACB624501EBB00D8FD8D /* SwiftProtocolCase.swift in Sources */,
 				B34EACAC244E8A6800D8FD8D /* Swift52.swift in Sources */,
 				B35CD1DF245845430020909B /* WebSocketCase.swift in Sources */,
+				B342E7B924777BDD00A81154 /* TestPDFVC.swift in Sources */,
 				B34EACB2244F059200D8FD8D /* SwiftDynamicCallableCase.swift in Sources */,
 				B3A85328243C78D200D28217 /* DDCollectionViewController.swift in Sources */,
 				B34EACAE244E8AC300D8FD8D /* SwiftKeyPathCase.swift in Sources */,
@@ -861,6 +880,7 @@
 				B3A85323243C78D200D28217 /* DDRow1.swift in Sources */,
 				B3B539A6240A56E9005163CE /* AppDelegate.swift in Sources */,
 				B3437DB72410B5A2004971E1 /* SortFunction.swift in Sources */,
+				B342E7B824777BDD00A81154 /* UIBezierPath+.swift in Sources */,
 				B392E328241FD488005299EE /* DDAnnotation.m in Sources */,
 				B338052B24585461000B2262 /* GCDAsyncSocket.m in Sources */,
 				B3B539BE240A575A005163CE /* CoreDataManager.swift in Sources */,
