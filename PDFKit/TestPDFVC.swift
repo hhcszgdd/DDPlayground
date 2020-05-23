@@ -61,7 +61,6 @@ class TestPDFVC: UIViewController {
             do {
                 let pdfData = try Data(contentsOf: URL(fileURLWithPath: dir))
                 let vc = UIActivityViewController(activityItems: [ "here you are", URL(fileURLWithPath: dir) ], applicationActivities: nil)
-                vc.
                 vc.excludedActivityTypes = [ .print, .assignToContact, .addToReadingList, .openInIBooks ]
                 vc.completionWithItemsHandler = { activityType, _, _, _ in
                     //            if activityType == .copyToPasteboard { UIPasteboard.general.string = User.current!.referralLink }

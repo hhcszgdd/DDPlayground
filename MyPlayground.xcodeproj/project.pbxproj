@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3E5B2F6B76CD6F60AA76F67E /* Pods_MyPlayground.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC1D198F575D10C70115FD88 /* Pods_MyPlayground.framework */; };
-		6B42684241871787F4D8847B /* Pods_MyPlaygroundUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C7687876A0257876CD96A36 /* Pods_MyPlaygroundUITests.framework */; };
 		B313ABAC24753D2800E44FAE /* DDPDFViewerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B313ABAB24753D2800E44FAE /* DDPDFViewerVC.swift */; };
 		B338052B24585461000B2262 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = B338052824585461000B2262 /* GCDAsyncSocket.m */; };
 		B338052C24585461000B2262 /* MBWebSocketServer.m in Sources */ = {isa = PBXBuildFile; fileRef = B338052A24585461000B2262 /* MBWebSocketServer.m */; };
@@ -91,7 +90,7 @@
 		B3A85328243C78D200D28217 /* DDCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B348107F2414911D00C041FB /* DDCollectionViewController.swift */; };
 		B3B0A857246A8F0500FCDE92 /* pokemon-25.json in Resources */ = {isa = PBXBuildFile; fileRef = B3B0A856246A8F0500FCDE92 /* pokemon-25.json */; };
 		B3B0A859246A903600FCDE92 /* DDFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B0A858246A903600FCDE92 /* DDFileManager.swift */; };
-		B3B0A85C246AAB4B00FCDE92 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = B3B0A85B246AAB4B00FCDE92 /* SDWebImageSwiftUI */; };
+		B3B0A85C246AAB4B00FCDE92 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = B3B0A85B246AAB4B00FCDE92 /* SwiftPackageProductDependency */; };
 		B3B539A6240A56E9005163CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B539A5240A56E9005163CE /* AppDelegate.swift */; };
 		B3B539A8240A56E9005163CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B539A7240A56E9005163CE /* SceneDelegate.swift */; };
 		B3B539AA240A56E9005163CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B539A9240A56E9005163CE /* ViewController.swift */; };
@@ -137,8 +136,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		49AF9A21D1E790DCAF8FBDEB /* Pods-MyPlaygroundUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyPlaygroundUITests.debug.xcconfig"; path = "Target Support Files/Pods-MyPlaygroundUITests/Pods-MyPlaygroundUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		4C7687876A0257876CD96A36 /* Pods_MyPlaygroundUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyPlaygroundUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		571248CAAE0270E3F8EE4D59 /* Pods-MyPlayground.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyPlayground.release.xcconfig"; path = "Target Support Files/Pods-MyPlayground/Pods-MyPlayground.release.xcconfig"; sourceTree = "<group>"; };
 		6CB5AB4C6BF6567585821050 /* Pods-DDUIKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDUIKit.release.xcconfig"; path = "Target Support Files/Pods-DDUIKit/Pods-DDUIKit.release.xcconfig"; sourceTree = "<group>"; };
 		ACF22C139949AA419D3B9269 /* Pods_DDUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DDUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -257,7 +254,6 @@
 		CC1D198F575D10C70115FD88 /* Pods_MyPlayground.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyPlayground.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D03A255FEC5623E5842F0D2E /* Pods-DDFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDFramework.release.xcconfig"; path = "Target Support Files/Pods-DDFramework/Pods-DDFramework.release.xcconfig"; sourceTree = "<group>"; };
 		D2F04EB6D09CB76B5FF8B8E2 /* Pods_DDFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DDFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D3C2FD2FBAA7F2C31CF60D91 /* Pods-MyPlaygroundUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyPlaygroundUITests.release.xcconfig"; path = "Target Support Files/Pods-MyPlaygroundUITests/Pods-MyPlaygroundUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E1DA540BC4FF1EA210C598BE /* Pods-MyPlayground.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyPlayground.debug.xcconfig"; path = "Target Support Files/Pods-MyPlayground/Pods-MyPlayground.debug.xcconfig"; sourceTree = "<group>"; };
 		F18500B797B8867A4B96E4F0 /* Pods-DDFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDFramework.debug.xcconfig"; path = "Target Support Files/Pods-DDFramework/Pods-DDFramework.debug.xcconfig"; sourceTree = "<group>"; };
 		FFE2C7933DDAB8691D197D93 /* Pods-DDUIKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDUIKit.debug.xcconfig"; path = "Target Support Files/Pods-DDUIKit/Pods-DDUIKit.debug.xcconfig"; sourceTree = "<group>"; };
@@ -268,7 +264,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B42684241871787F4D8847B /* Pods_MyPlaygroundUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +271,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3B0A85C246AAB4B00FCDE92 /* SDWebImageSwiftUI in Frameworks */,
+				B3B0A85C246AAB4B00FCDE92 /* BuildFile in Frameworks */,
 				3E5B2F6B76CD6F60AA76F67E /* Pods_MyPlayground.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -290,7 +285,6 @@
 				D2F04EB6D09CB76B5FF8B8E2 /* Pods_DDFramework.framework */,
 				ACF22C139949AA419D3B9269 /* Pods_DDUIKit.framework */,
 				CC1D198F575D10C70115FD88 /* Pods_MyPlayground.framework */,
-				4C7687876A0257876CD96A36 /* Pods_MyPlaygroundUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -608,8 +602,6 @@
 				6CB5AB4C6BF6567585821050 /* Pods-DDUIKit.release.xcconfig */,
 				E1DA540BC4FF1EA210C598BE /* Pods-MyPlayground.debug.xcconfig */,
 				571248CAAE0270E3F8EE4D59 /* Pods-MyPlayground.release.xcconfig */,
-				49AF9A21D1E790DCAF8FBDEB /* Pods-MyPlaygroundUITests.debug.xcconfig */,
-				D3C2FD2FBAA7F2C31CF60D91 /* Pods-MyPlaygroundUITests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -621,7 +613,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B3437DE624127E40004971E1 /* Build configuration list for PBXNativeTarget "MyPlaygroundUITests" */;
 			buildPhases = (
-				317833336A9B2123D7C7EF2B /* [CP] Check Pods Manifest.lock */,
 				B3437DD924127E40004971E1 /* Sources */,
 				B3437DDA24127E40004971E1 /* Frameworks */,
 				B3437DDB24127E40004971E1 /* Resources */,
@@ -653,7 +644,7 @@
 			);
 			name = MyPlayground;
 			packageProductDependencies = (
-				B3B0A85B246AAB4B00FCDE92 /* SDWebImageSwiftUI */,
+				B3B0A85B246AAB4B00FCDE92 /* SwiftPackageProductDependency */,
 			);
 			productName = MyPlayground;
 			productReference = B3B539A2240A56E9005163CE /* MyPlayground.app */;
@@ -689,7 +680,7 @@
 			);
 			mainGroup = B3B53999240A56E9005163CE;
 			packageReferences = (
-				B3B0A85A246AAB4B00FCDE92 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				B3B0A85A246AAB4B00FCDE92 /* RemoteSwiftPackageReference */,
 			);
 			productRefGroup = B3B539A3240A56E9005163CE /* Products */;
 			projectDirPath = "";
@@ -763,28 +754,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		317833336A9B2123D7C7EF2B /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MyPlaygroundUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		63B26D880B1DF03F6EDF023E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -930,7 +899,6 @@
 /* Begin XCBuildConfiguration section */
 		B3437DE424127E40004971E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 49AF9A21D1E790DCAF8FBDEB /* Pods-MyPlaygroundUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3G3KPW6FQ7;
@@ -950,7 +918,6 @@
 		};
 		B3437DE524127E40004971E1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D3C2FD2FBAA7F2C31CF60D91 /* Pods-MyPlaygroundUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3G3KPW6FQ7;
@@ -1162,7 +1129,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		B3B0A85A246AAB4B00FCDE92 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+		B3B0A85A246AAB4B00FCDE92 /* RemoteSwiftPackageReference */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
 			requirement = {
@@ -1173,9 +1140,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		B3B0A85B246AAB4B00FCDE92 /* SDWebImageSwiftUI */ = {
+		B3B0A85B246AAB4B00FCDE92 /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = B3B0A85A246AAB4B00FCDE92 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			package = B3B0A85A246AAB4B00FCDE92 /* RemoteSwiftPackageReference */;
 			productName = SDWebImageSwiftUI;
 		};
 /* End XCSwiftPackageProductDependency section */

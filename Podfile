@@ -11,6 +11,10 @@ target 'MyPlayground' do
     pod 'lottie-ios'
     pod 'RealmSwift'
     pod 'SDWebImage', '~> 5.0'
+    pod 'Moya', '~> 14.0'
+    pod 'SwifterSwift'
+#    pod 'JTAppleCalendar', '~>; 7.1'
+    pod 'EFQRCode', '~> 5.1.6'
 #    pod 'EarlGreyApp', '2.0.0-rc'
 
 end
