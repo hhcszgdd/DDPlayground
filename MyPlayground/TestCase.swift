@@ -29,6 +29,7 @@ enum DDAction: String , CaseIterable {
     case webSocket
     case pdfKit
     case lottieAnimation
+    case realm
 }
 
 extension ViewController {
@@ -72,6 +73,8 @@ extension ViewController {
             DDGoldCupAnimator.show(on: view)
         case .lottieAnimation:
             testLottieAnimation()
+        case .realm:
+            testRealm()
         case .pdfKit:
             if #available(iOS 11, *) {
                 showPDFSign()

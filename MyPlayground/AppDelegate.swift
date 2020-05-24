@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         window = DDKeyWindow.share
         DDKeyWindow.share.show()
-        
+        TestRealmVC.configRealm()
 //        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
 //            DDAlertWindow.share.show()
 //        }

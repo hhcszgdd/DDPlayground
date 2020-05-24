@@ -76,6 +76,16 @@
 		B3750B2E247A083E0019D886 /* TestLottieAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3750B2D247A083E0019D886 /* TestLottieAnimation.swift */; };
 		B3750B30247A09010019D886 /* signature-lottie.json in Resources */ = {isa = PBXBuildFile; fileRef = B3750B2F247A09010019D886 /* signature-lottie.json */; };
 		B3750B32247A09DB0019D886 /* tellus-logo-animation.json in Resources */ = {isa = PBXBuildFile; fileRef = B3750B31247A09DB0019D886 /* tellus-logo-animation.json */; };
+		B3750B35247A0AC70019D886 /* TestRealmVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3750B34247A0AC70019D886 /* TestRealmVC.swift */; };
+		B3750B37247A0BDB0019D886 /* StudentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3750B36247A0BDB0019D886 /* StudentModel.swift */; };
+		B3750B39247A0EBD0019D886 /* StudentDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3750B38247A0EBD0019D886 /* StudentDetailVC.swift */; };
+		B3750B3B247A0ECF0019D886 /* BookDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3750B3A247A0ECF0019D886 /* BookDetailVC.swift */; };
+		B3750B3D247A4F160019D886 /* StudentVCViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3750B3C247A4F160019D886 /* StudentVCViewModel.swift */; };
+		B3750B3F247A4F830019D886 /* StudentListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3750B3E247A4F830019D886 /* StudentListVC.swift */; };
+		B3750B43247A545D0019D886 /* RXStudentListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3750B42247A545D0019D886 /* RXStudentListVC.swift */; };
+		B3750B45247A54700019D886 /* RXStudentDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3750B44247A54700019D886 /* RXStudentDetailVC.swift */; };
+		B3750B47247A54830019D886 /* RXBookDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3750B46247A54830019D886 /* RXBookDetailVC.swift */; };
+		B3750B49247A549A0019D886 /* RXStudentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3750B48247A549A0019D886 /* RXStudentModel.swift */; };
 		B392E328241FD488005299EE /* DDAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = B392E323241FD488005299EE /* DDAnnotation.m */; };
 		B392E329241FD488005299EE /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B392E324241FD488005299EE /* MapViewController.m */; };
 		B392E32A241FD488005299EE /* DDMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B392E325241FD488005299EE /* DDMapViewController.swift */; };
@@ -224,6 +234,16 @@
 		B3750B2D247A083E0019D886 /* TestLottieAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestLottieAnimation.swift; sourceTree = "<group>"; };
 		B3750B2F247A09010019D886 /* signature-lottie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "signature-lottie.json"; sourceTree = "<group>"; };
 		B3750B31247A09DB0019D886 /* tellus-logo-animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "tellus-logo-animation.json"; sourceTree = "<group>"; };
+		B3750B34247A0AC70019D886 /* TestRealmVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRealmVC.swift; sourceTree = "<group>"; };
+		B3750B36247A0BDB0019D886 /* StudentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentModel.swift; sourceTree = "<group>"; };
+		B3750B38247A0EBD0019D886 /* StudentDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentDetailVC.swift; sourceTree = "<group>"; };
+		B3750B3A247A0ECF0019D886 /* BookDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailVC.swift; sourceTree = "<group>"; };
+		B3750B3C247A4F160019D886 /* StudentVCViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentVCViewModel.swift; sourceTree = "<group>"; };
+		B3750B3E247A4F830019D886 /* StudentListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListVC.swift; sourceTree = "<group>"; };
+		B3750B42247A545D0019D886 /* RXStudentListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RXStudentListVC.swift; sourceTree = "<group>"; };
+		B3750B44247A54700019D886 /* RXStudentDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RXStudentDetailVC.swift; sourceTree = "<group>"; };
+		B3750B46247A54830019D886 /* RXBookDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RXBookDetailVC.swift; sourceTree = "<group>"; };
+		B3750B48247A549A0019D886 /* RXStudentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RXStudentModel.swift; sourceTree = "<group>"; };
 		B392E323241FD488005299EE /* DDAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDAnnotation.m; sourceTree = "<group>"; };
 		B392E324241FD488005299EE /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		B392E325241FD488005299EE /* DDMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDMapViewController.swift; sourceTree = "<group>"; };
@@ -462,6 +482,39 @@
 			path = DDFramework;
 			sourceTree = "<group>";
 		};
+		B3750B33247A0AAF0019D886 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				B3750B41247A543D0019D886 /* RXSwiftStyle */,
+				B3750B40247A53F60019D886 /* TriditionalStyle */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		B3750B40247A53F60019D886 /* TriditionalStyle */ = {
+			isa = PBXGroup;
+			children = (
+				B3750B34247A0AC70019D886 /* TestRealmVC.swift */,
+				B3750B3E247A4F830019D886 /* StudentListVC.swift */,
+				B3750B38247A0EBD0019D886 /* StudentDetailVC.swift */,
+				B3750B3A247A0ECF0019D886 /* BookDetailVC.swift */,
+				B3750B36247A0BDB0019D886 /* StudentModel.swift */,
+			);
+			path = TriditionalStyle;
+			sourceTree = "<group>";
+		};
+		B3750B41247A543D0019D886 /* RXSwiftStyle */ = {
+			isa = PBXGroup;
+			children = (
+				B3750B3C247A4F160019D886 /* StudentVCViewModel.swift */,
+				B3750B42247A545D0019D886 /* RXStudentListVC.swift */,
+				B3750B44247A54700019D886 /* RXStudentDetailVC.swift */,
+				B3750B46247A54830019D886 /* RXBookDetailVC.swift */,
+				B3750B48247A549A0019D886 /* RXStudentModel.swift */,
+			);
+			path = RXSwiftStyle;
+			sourceTree = "<group>";
+		};
 		B392E322241FD42D005299EE /* Map */ = {
 			isa = PBXGroup;
 			children = (
@@ -489,6 +542,7 @@
 		B3B53999240A56E9005163CE = {
 			isa = PBXGroup;
 			children = (
+				B3750B33247A0AAF0019D886 /* Realm */,
 				B342E7B524777BD100A81154 /* PDFKit */,
 				B35CD1DD245845220020909B /* Network */,
 				B34EACA8244E896D00D8FD8D /* SwiftSyntax */,
@@ -819,12 +873,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3750B47247A54830019D886 /* RXBookDetailVC.swift in Sources */,
 				B3B539B0240A56E9005163CE /* MyPlayground.xcdatamodeld in Sources */,
 				B392E32A241FD488005299EE /* DDMapViewController.swift in Sources */,
+				B3750B45247A54700019D886 /* RXStudentDetailVC.swift in Sources */,
 				B3CAB4D9244475D4000AE3ED /* UIVCUsedInSwiftUI.swift in Sources */,
 				B34EACB8245020E200D8FD8D /* SwiftOperatorSymbolCase.swift in Sources */,
 				B3750B2E247A083E0019D886 /* TestLottieAnimation.swift in Sources */,
 				B3A85312243C694400D28217 /* UIImageExtension.swift in Sources */,
+				B3750B35247A0AC70019D886 /* TestRealmVC.swift in Sources */,
 				B3FE1505244946530095C7B9 /* AllKindOfAlert.swift in Sources */,
 				B348CEBB241BAC2D00E56B24 /* DDAnimation.swift in Sources */,
 				B348CEB4241B248C00E56B24 /* DDMultipleThread.swift in Sources */,
@@ -832,6 +889,7 @@
 				B34EACAA244E89B700D8FD8D /* SwiftSyntaxCase.swift in Sources */,
 				B348CEBF241BB19600E56B24 /* DDEmojiEmitterView.swift in Sources */,
 				B3A85321243C78D200D28217 /* DDCollectionViewCell.swift in Sources */,
+				B3750B37247A0BDB0019D886 /* StudentModel.swift in Sources */,
 				B348CEBD241BAE6B00E56B24 /* DDGoldCupAnimator.swift in Sources */,
 				B34EACBA24502BE900D8FD8D /* WebVCCase.swift in Sources */,
 				B344F4412418872B000583C9 /* SwitcherView.swift in Sources */,
@@ -844,10 +902,12 @@
 				B3A85320243C78D200D28217 /* DDCollectionView.swift in Sources */,
 				B3498DCE2413EC7C00867D6D /* DDRxViewController.swift in Sources */,
 				B3CAB4D024445391000AE3ED /* DDGameDemoVC.swift in Sources */,
+				B3750B3B247A0ECF0019D886 /* BookDetailVC.swift in Sources */,
 				B3CAB4D424446EB9000AE3ED /* TestCase.swift in Sources */,
 				B3A85322243C78D200D28217 /* DDRow.swift in Sources */,
 				B34EACB624501EBB00D8FD8D /* SwiftProtocolCase.swift in Sources */,
 				B34EACAC244E8A6800D8FD8D /* Swift52.swift in Sources */,
+				B3750B49247A549A0019D886 /* RXStudentModel.swift in Sources */,
 				B35CD1DF245845430020909B /* WebSocketCase.swift in Sources */,
 				B342E7B924777BDD00A81154 /* TestPDFVC.swift in Sources */,
 				B34EACB2244F059200D8FD8D /* SwiftDynamicCallableCase.swift in Sources */,
@@ -869,10 +929,14 @@
 				B3CAB4D7244474FC000AE3ED /* InteractionWithUIKit.swift in Sources */,
 				B3A85327243C78D200D28217 /* DDViewController.swift in Sources */,
 				B3CBC70F241E235200533300 /* UIView+AutoLayout.m in Sources */,
+				B3750B3D247A4F160019D886 /* StudentVCViewModel.swift in Sources */,
+				B3750B43247A545D0019D886 /* RXStudentListVC.swift in Sources */,
 				B3B539A8240A56E9005163CE /* SceneDelegate.swift in Sources */,
 				B3B539C3240A5811005163CE /* Model1+CoreDataProperties.swift in Sources */,
 				B34EACBC2450394500D8FD8D /* DDTimer.swift in Sources */,
+				B3750B39247A0EBD0019D886 /* StudentDetailVC.swift in Sources */,
 				B3A8531F243C78CC00D28217 /* DDFunctionClass.swift in Sources */,
+				B3750B3F247A4F830019D886 /* StudentListVC.swift in Sources */,
 				B344F4402418872B000583C9 /* ContainerView.swift in Sources */,
 				B3B539C2240A5811005163CE /* Model1+CoreDataClass.swift in Sources */,
 				B3CBC712241E2E2C00533300 /* DDSingleInstance.m in Sources */,
