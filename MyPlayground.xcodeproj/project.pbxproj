@@ -122,6 +122,9 @@
 		B3CAB4DB24447B62000AE3ED /* UIViewUsedInSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CAB4DA24447B62000AE3ED /* UIViewUsedInSwiftUI.swift */; };
 		B3CBC70F241E235200533300 /* UIView+AutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B3CBC70E241E235200533300 /* UIView+AutoLayout.m */; };
 		B3CBC712241E2E2C00533300 /* DDSingleInstance.m in Sources */ = {isa = PBXBuildFile; fileRef = B3CBC711241E2E2C00533300 /* DDSingleInstance.m */; };
+		B3CF132D24A07E1600808A1D /* PropertyWrapperCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CF132C24A07E1600808A1D /* PropertyWrapperCase.swift */; };
+		B3F747122495AF49003E1E22 /* TestAddress.c in Sources */ = {isa = PBXBuildFile; fileRef = B3F747112495AF49003E1E22 /* TestAddress.c */; };
+		B3F747142495AF91003E1E22 /* TestAddressCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F747132495AF91003E1E22 /* TestAddressCase.swift */; };
 		B3FE1505244946530095C7B9 /* AllKindOfAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FE1504244946530095C7B9 /* AllKindOfAlert.swift */; };
 /* End PBXBuildFile section */
 
@@ -276,6 +279,10 @@
 		B3CBC70E241E235200533300 /* UIView+AutoLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+AutoLayout.m"; sourceTree = "<group>"; };
 		B3CBC710241E2E2C00533300 /* DDSingleInstance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDSingleInstance.h; sourceTree = "<group>"; };
 		B3CBC711241E2E2C00533300 /* DDSingleInstance.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDSingleInstance.m; sourceTree = "<group>"; };
+		B3CF132C24A07E1600808A1D /* PropertyWrapperCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyWrapperCase.swift; sourceTree = "<group>"; };
+		B3F747102495AF49003E1E22 /* TestAddress.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestAddress.h; sourceTree = "<group>"; };
+		B3F747112495AF49003E1E22 /* TestAddress.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = TestAddress.c; sourceTree = "<group>"; };
+		B3F747132495AF91003E1E22 /* TestAddressCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAddressCase.swift; sourceTree = "<group>"; };
 		B3FE1504244946530095C7B9 /* AllKindOfAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllKindOfAlert.swift; sourceTree = "<group>"; };
 		CC1D198F575D10C70115FD88 /* Pods_MyPlayground.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyPlayground.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D03A255FEC5623E5842F0D2E /* Pods-DDFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDFramework.release.xcconfig"; path = "Target Support Files/Pods-DDFramework/Pods-DDFramework.release.xcconfig"; sourceTree = "<group>"; };
@@ -542,6 +549,7 @@
 		B3B53999240A56E9005163CE = {
 			isa = PBXGroup;
 			children = (
+				B3F7470F2495AF20003E1E22 /* Fundation */,
 				B3750B33247A0AAF0019D886 /* Realm */,
 				B342E7B524777BD100A81154 /* PDFKit */,
 				B35CD1DD245845220020909B /* Network */,
@@ -654,6 +662,17 @@
 				B3CBC711241E2E2C00533300 /* DDSingleInstance.m */,
 			);
 			path = AutoLayout;
+			sourceTree = "<group>";
+		};
+		B3F7470F2495AF20003E1E22 /* Fundation */ = {
+			isa = PBXGroup;
+			children = (
+				B3F747102495AF49003E1E22 /* TestAddress.h */,
+				B3F747112495AF49003E1E22 /* TestAddress.c */,
+				B3F747132495AF91003E1E22 /* TestAddressCase.swift */,
+				B3CF132C24A07E1600808A1D /* PropertyWrapperCase.swift */,
+			);
+			path = Fundation;
 			sourceTree = "<group>";
 		};
 		D590A020B174D7FEC2BA993F /* Pods */ = {
@@ -885,6 +904,7 @@
 				B3FE1505244946530095C7B9 /* AllKindOfAlert.swift in Sources */,
 				B348CEBB241BAC2D00E56B24 /* DDAnimation.swift in Sources */,
 				B348CEB4241B248C00E56B24 /* DDMultipleThread.swift in Sources */,
+				B3CF132D24A07E1600808A1D /* PropertyWrapperCase.swift in Sources */,
 				B3CAB4DB24447B62000AE3ED /* UIViewUsedInSwiftUI.swift in Sources */,
 				B34EACAA244E89B700D8FD8D /* SwiftSyntaxCase.swift in Sources */,
 				B348CEBF241BB19600E56B24 /* DDEmojiEmitterView.swift in Sources */,
@@ -893,6 +913,7 @@
 				B348CEBD241BAE6B00E56B24 /* DDGoldCupAnimator.swift in Sources */,
 				B34EACBA24502BE900D8FD8D /* WebVCCase.swift in Sources */,
 				B344F4412418872B000583C9 /* SwitcherView.swift in Sources */,
+				B3F747122495AF49003E1E22 /* TestAddress.c in Sources */,
 				B338052C24585461000B2262 /* MBWebSocketServer.m in Sources */,
 				B34EACB42450173600D8FD8D /* SwiftAssociatedTypes.swift in Sources */,
 				B392E329241FD488005299EE /* MapViewController.m in Sources */,
@@ -931,6 +952,7 @@
 				B3CBC70F241E235200533300 /* UIView+AutoLayout.m in Sources */,
 				B3750B3D247A4F160019D886 /* StudentVCViewModel.swift in Sources */,
 				B3750B43247A545D0019D886 /* RXStudentListVC.swift in Sources */,
+				B3F747142495AF91003E1E22 /* TestAddressCase.swift in Sources */,
 				B3B539A8240A56E9005163CE /* SceneDelegate.swift in Sources */,
 				B3B539C3240A5811005163CE /* Model1+CoreDataProperties.swift in Sources */,
 				B34EACBC2450394500D8FD8D /* DDTimer.swift in Sources */,

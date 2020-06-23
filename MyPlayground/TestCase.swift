@@ -35,6 +35,7 @@ enum DDAction: String , CaseIterable {
 extension ViewController {
     func willBePerformAction(action: DDAction)  {
         print(action.rawValue)
+        testAddress()
         switch action {
         case .layout:
             testAutolayout()
